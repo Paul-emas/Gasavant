@@ -1,9 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -15,12 +17,132 @@ a {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Switzer";
+  src: url("../public/assets/fonts/switzer/Switzer-Light.eot"),
+    url("../public/assets/fonts/switzer/Switzer-Light.woff") format("woff"),
+    url("../public/assets/fonts/switzer/Switzer-Light.woff2") format("woff2"),
+    url("../public/assets/fonts/switzer/Switzer-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Switzer";
+  src: url("../public/assets/fonts/switzer/Switzer-Regular.eot"),
+    url("../public/assets/fonts/switzer/Switzer-Regular.woff") format("woff"),
+    url("../public/assets/fonts/switzer/Switzer-Regular.woff2") format("woff2"),
+    url("../public/assets/fonts/switzer/Switzer-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Switzer";
+  src: url("../public/assets/fonts/switzer/Switzer-Medium.eot"),
+    url("../public/assets/fonts/switzer/Switzer-Medium.woff") format("woff"),
+    url("../public/assets/fonts/switzer/Switzer-Medium.woff2") format("woff2"),
+    url("../public/assets/fonts/switzer/Switzer-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Switzer";
+  src: url("../public/assets/fonts/switzer/Switzer-Semibold.eot"),
+    url("../public/assets/fonts/switzer/Switzer-Semibold.woff") format("woff"),
+    url("../public/assets/fonts/switzer/Switzer-Semibold.woff2") format("woff2"),
+    url("../public/assets/fonts/switzer/Switzer-Semibold.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Switzer";
+  src: url("../public/assets/fonts/switzer/Switzer-Bold.eot"),
+    url("../public/assets/fonts/switzer/Switzer-Bold.woff") format("woff"),
+    url("../public/assets/fonts/switzer/Switzer-Bold.woff2") format("woff2"),
+    url("../public/assets/fonts/switzer/Switzer-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
   body {
-    color: white;
-    background: black;
+    font-family: "Switzer";
+    @apply bg-neutral-0;
+  }
+}
+
+@layer components {
+  .btn-size-xsmall {
+    @apply px-8 py-3 text-3.2xl;
+  }
+
+  .btn-size-medium {
+    @apply px-10 py-4 text-base;
+  }
+
+  .btn-size-large {
+    @apply px-10 py-[22px] text-4.5xl;
+  }
+
+  .btn-size-large-icon {
+    @apply py-5 pr-10 pl-8 text-4.5xl;
+  }
+
+  .icon-primary svg > path {
+    fill: "#fafafa" !important;
+  }
+
+  .icon-primary:hover svg > path {
+    fill: "#fafafa" !important;
+  }
+
+  .icon-primary:active svg > path {
+    fill: "#fafafa" !important;
+  }
+
+  .icon-dark svg > path {
+    fill: "#000914" !important;
+  }
+
+  .icon-dark:hover svg > path {
+    fill: "#000914" !important;
+  }
+
+  .icon-dark:active svg > path {
+    fill: "#000914" !important;
+  }
+
+  .icon-darker svg > path {
+    fill: "#E6F0FC" !important;
+  }
+
+  .icon-darker:hover svg > path {
+    fill: "#B0D1F7" !important;
+  }
+
+  .icon-darker:active svg > path {
+    fill: "#8ABAF3" !important;
+  }
+  .float-shadow {
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.slider1 {
+  animation: cambio 80s infinite linear both;
+}
+@keyframes cambio {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
