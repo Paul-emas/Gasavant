@@ -4,7 +4,7 @@ import React from "react";
 const HomepageLogo: React.FC = () => {
   return (
     <section className="h-[279px] bg-primary-50 py-16">
-      <div className="container px-20 2xl:px-40 mx-auto">
+      <div className="container px-8 2xl:px-40 mx-auto">
         <div className="text-4.5xl text-neutral-900 text-center font-switz font-semibold">
           Trusted by 10+ Industry leading companies
         </div>

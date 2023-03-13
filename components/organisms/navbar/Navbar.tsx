@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme = "light" }) => {
       } h-[120px] flex items-center w-full`}
     >
       <div className="h-14 w-full">
-        <div className="container px-20 2xl:px-40 mx-auto flex items-center justify-between h-14">
+        <div className="container px-8 2xl:px-40 mx-auto flex items-center justify-between h-14">
           <div>
             <Link href="/">
               <Image

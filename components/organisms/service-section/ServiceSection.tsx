@@ -21,7 +21,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
 }) => {
   return (
     <section className="bg-neutral-0 pt-[129px] pb-[215px]">
-      <div className="container px-20 2xl:px-40 mx-auto">
+      <div className="container px-8 2xl:px-40 mx-auto">
         <SectionHeading {...{ title, pageCaption }} />
         <div className="grid grid-cols-3 mt-[100px] gap-6">
           {data.map(({ iconUrl, title, caption }, ind) => (

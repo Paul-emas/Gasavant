@@ -5,7 +5,7 @@ import React from "react";
 const Header: React.FC = () => {
   return (
     <header className="h-[783px] bg-neutral-900 overflow-hidden">
-      <div className="container px-20 2xl:px-40 mx-auto h-full">
+      <div className="container px-8 2xl:px-40 mx-auto h-full">
         <div className="grid grid-cols-2 h-full">
           <div>
             <div className="mt-[112px]">

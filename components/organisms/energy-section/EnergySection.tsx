@@ -4,7 +4,7 @@ import React from "react";
 const EnergySection: React.FC = () => {
   return (
     <section className="bg-primary-500 pt-[133px] pb-[141px]">
-      <div className="container px-20 2xl:px-40 mx-auto">
+      <div className="container px-8 2xl:px-40 mx-auto">
         <div className="grid grid-cols-2">
           <div className="text-neutral-0 text-5xl max-w-[392px] leading-[58px] font-bold">
             Energy is key to development
