@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme = "light" }) => {
           </div>
           <div className="flex items-center">
             {tabs.map(({ label }) => (
-              <NavTab label={label} theme={theme} />
+              <NavTab key={label} label={label} theme={theme} />
             ))}
           </div>
           <div>

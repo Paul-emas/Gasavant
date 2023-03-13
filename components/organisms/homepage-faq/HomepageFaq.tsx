@@ -47,9 +47,9 @@ const HomepageFaq = () => {
                       : "overflow-hidden h-0 duration-200"
                   } max-w-[578px] text-4.5xl font-switz text-neutral-600 transition-all`}
                 >
-                  You'll make a better win in digital if you know how to work
-                  around their creative contents and how to amplify them to the
-                  markets that need it most.
+                  You&apos;ll make a better win in digital if you know how to
+                  work around their creative contents and how to amplify them to
+                  the markets that need it most.
                 </div>
               </div>
             ))}

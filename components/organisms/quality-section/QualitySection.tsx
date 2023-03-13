@@ -26,9 +26,9 @@ const QualitySection: React.FC = () => {
               We believe in premium quality
             </div>
             <div className="mt-7 text-neutral-900 font-switz text-base">
-              You'll make a better win in digital if you know how to work around
-              their creative contents and how to amplify them to the markets
-              that need it most. Watch the video and click learn more.
+              You&apos;ll make a better win in digital if you know how to work
+              around their creative contents and how to amplify them to the
+              markets that need it most. Watch the video and click learn more.
             </div>
 
             <Button label="Contact us" size="large" className="mt-14" />

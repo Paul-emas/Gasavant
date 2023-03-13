@@ -6,7 +6,7 @@ const questions = [
     ques: "What is your normal turn around time?",
     paragraphs: [
       "Super blocks is created for individual web designers and web design agencies.",
-      "It is also great if you're just starting out in web design, Super blocks and Framer make it easy to bring your creative visions to life. No coding skills required - simply mix and match blocks to create a custom website that perfectly captures your brand's essence.",
+      "It is also great if youre just starting out in web design, Super blocks and Framer make it easy to bring your creative visions to life. No coding skills required - simply mix and match blocks to create a custom website that perfectly captures your brand's essence.",
       "You can now launch a stunning website in no time - cutting your design time by up to 80%",
     ],
   },
@@ -21,7 +21,7 @@ const questions = [
     ques: "What is your normal turn around time?",
     paragraphs: [
       "Super blocks is created for individual web designers and web design agencies.",
-      "It is also great if you're just starting out in web design, Super blocks and Framer make it easy to bring your creative visions to life. No coding skills required - simply mix and match blocks to create a custom website that perfectly captures your brand's essence.",
+      "It is also great if youre just starting out in web design, Super blocks and Framer make it easy to bring your creative visions to life. No coding skills required - simply mix and match blocks to create a custom website that perfectly captures your brand's essence.",
       "You can now launch a stunning website in no time - cutting your design time by up to 80%",
     ],
   },
@@ -56,7 +56,10 @@ const FaqQuestions: React.FC = () => {
               </div>
               <div className="max-w-[553px] pb-[86px]">
                 {paragraphs.map((para) => (
-                  <div className="text-4.5xl text-neutral-500 font-switz mb-4">
+                  <div
+                    key={para}
+                    className="text-4.5xl text-neutral-500 font-switz mb-4"
+                  >
                     {para}
                   </div>
                 ))}
