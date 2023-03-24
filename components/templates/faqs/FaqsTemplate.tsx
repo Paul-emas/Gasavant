@@ -5,7 +5,7 @@ import { FaqQuestions, Footer, Navbar } from "components/organisms";
 const FaqsTemplate = () => {
   return (
     <div>
-      <Navbar theme="light" />
+      <Navbar theme="light" logoTheme="light" optionTheme="light" />
       <HeadingBanner
         {...{
           title: "Frequently Asked Questions",

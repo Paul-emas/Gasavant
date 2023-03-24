@@ -1,6 +1,6 @@
 import { SectionHeading } from "components/atoms";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
 interface CardDetailInterface {
   iconUrl: string;
@@ -9,21 +9,29 @@ interface CardDetailInterface {
 }
 
 export interface ServiceSectionProps {
-  title: string;
+  title?: string;
   pageCaption?: string;
   data: CardDetailInterface[];
+  inPage?: boolean;
 }
 
 const ServiceSection: React.FC<ServiceSectionProps> = ({
   title = "",
   pageCaption,
   data,
+  inPage,
 }) => {
   return (
-    <section className="bg-neutral-0 pt-[129px] pb-[215px]">
-      <div className="container px-8 2xl:px-40 mx-auto">
-        <SectionHeading {...{ title, pageCaption }} />
-        <div className="grid grid-cols-3 mt-[100px] gap-6">
+    <section
+      className={`${!inPage ? "bg-neutral-0 pt-[129px] pb-[215px]" : ""}`}
+    >
+      <div className={`${!inPage ? "container px-8 2xl:px-40 mx-auto" : ""}`}>
+        {title && pageCaption ? (
+          <div className="mb-[100px]">
+            <SectionHeading {...{ title, pageCaption }} />
+          </div>
+        ) : null}
+        <div className="grid grid-cols-3 gap-6">
           {data.map(({ iconUrl, title, caption }, ind) => (
             <div
               key={`card-sec-${ind}`}

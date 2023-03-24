@@ -1,10 +1,11 @@
 import { Button } from "components/atoms";
+import AvatarGroup from "components/atoms/avatar-group/AvatarGroup";
 import Image from "next/image";
 import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="h-[783px] bg-neutral-900 overflow-hidden">
+    <header className="h-[750px] bg-neutral-900 overflow-hidden">
       <div className="container px-8 2xl:px-40 mx-auto h-full">
         <div className="grid grid-cols-2 h-full">
           <div>
@@ -38,47 +39,10 @@ const Header: React.FC = () => {
                 />
               </div>
             </div>
-            <div className="mt-[142px] flex items-center">
-              <div className="flex items-center">
-                <Image
-                  src="/assets/images/avatar-1.jpg"
-                  width={56}
-                  height={56}
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL="/assets/images/avatar-1.jpg"
-                  alt="header avatar 1"
-                  className="rounded-full -ml-4"
-                />
-                <Image
-                  src="/assets/images/avatar-2.jpg"
-                  width={56}
-                  height={56}
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL="/assets/images/avatar-2.jpg"
-                  alt="header avatar 2"
-                  className="rounded-full -ml-4"
-                />
-                <Image
-                  src="/assets/images/angle-up.jpg"
-                  width={56}
-                  height={56}
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL="/assets/images/angle-up.jpg"
-                  alt="header arrow up image"
-                  className="rounded-full -ml-4"
-                />
-              </div>
-              <div className="ml-4 text-neutral-20 font-switz">
-                <div className="font-semibold">Senior staff</div>
-                <div className="font-light">ready to assist you</div>
-              </div>
-            </div>
+            <AvatarGroup />
           </div>
           <div className="relative">
-            <div className="absolute bottom-[58px] right-0 scale-125">
+            <div className="absolute bottom-[60px] 2xl:bottom-[100px] 3xl:bottom-[40px] 3xl:scale-[1.13] right-0 scale-[1.25] 2xl:scale-[1.4]">
               <Image
                 src="/assets/images/tank.png"
                 width={795}

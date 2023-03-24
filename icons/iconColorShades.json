@@ -1,4 +1,5 @@
 {
   "light": "#fafafa",
-  "dark": "#000914"
+  "dark": "#000914",
+  "secondary": "#0169E4"
 }

@@ -7,7 +7,7 @@ import Image from "next/image";
 const TeamTemplate: React.FC = () => {
   return (
     <div>
-      <Navbar theme="light" />
+      <Navbar theme="light" logoTheme="light" optionTheme="light" />
       <HeadingBanner
         {...{
           title: "Our engineering team of experts",

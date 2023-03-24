@@ -9,6 +9,12 @@ import HomepageFaq from "./homepage-faq/HomepageFaq";
 import StatsSection from "./stats-section/StatsSection";
 import Footer from "./footer/Footer";
 import FaqQuestions from "./faq-questions/FaqQuestions";
+import AboutCounter from "./about-counter/AboutCounter";
+import AboutInfo from "./about-info/AboutInfo";
+import AboutEnergy from "./about-energy/AboutEnergy";
+import WhyUs from "./why-us/WhyUs";
+import AboutProject from "./about-project/AboutProject";
+import ProjectList from "./project-list/ProjectList";
 
 export {
   Navbar,
@@ -22,4 +28,10 @@ export {
   StatsSection,
   Footer,
   FaqQuestions,
+  AboutCounter,
+  AboutInfo,
+  AboutEnergy,
+  WhyUs,
+  AboutProject,
+  ProjectList,
 };

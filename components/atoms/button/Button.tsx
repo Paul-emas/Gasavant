@@ -11,7 +11,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isWithIcon?: boolean;
   iconType?: "arrow-right-up" | "arrow-right";
   iconPosition?: "left" | "right";
-  iconColor?: "light" | "dark";
+  iconColor?: "light" | "dark" | "secondary";
 }
 
 export interface ButtonSizesInterface {

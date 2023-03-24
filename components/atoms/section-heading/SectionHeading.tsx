@@ -14,12 +14,12 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   maxWidth,
 }) => {
   return (
-    <div className={`text-${align}`}>
-      <div
-        className={`${align === "center" ? "mx-auto" : ""} ${
-          maxWidth ? maxWidth : "max-w-[627px]"
-        } text-neutral-900 leading-[58px] text-5xl font-bold`}
-      >
+    <div
+      className={`text-${align} ${align === "center" ? "mx-auto" : ""} ${
+        maxWidth ? maxWidth : "max-w-[627px]"
+      }`}
+    >
+      <div className={`text-neutral-900 leading-[58px] text-5xl font-bold`}>
         {title}
       </div>
       {pageCaption ? (

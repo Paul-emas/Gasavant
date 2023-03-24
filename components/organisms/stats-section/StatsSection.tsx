@@ -1,7 +1,7 @@
 import React from "react";
 import { SectionHeading } from "components/atoms";
 
-const stats = [
+export const stats = [
   {
     title: "$1.5bn",
     caption: "Project value",
@@ -38,12 +38,14 @@ const StatsSection: React.FC = () => {
               {stats.map(({ title, caption }) => (
                 <div
                   key={title}
-                  className="h-[155px] border-r-[1.5px] border-neutral-40 w-[300px] text-center last:border-r-0"
+                  className="h-[155px] border-r-[1.5px] border-neutral-40 w-1/4 flex items-center justify-center text-center last:border-r-0"
                 >
-                  <div className="text-5.5xl text-neutral-900 font-bold">
-                    {title}
+                  <div>
+                    <div className="text-5.5xl text-neutral-900 font-bold">
+                      {title}
+                    </div>
+                    <div className="text-neutral-500 text-base">{caption}</div>
                   </div>
-                  <div className="text-neutral-500 text-base">{caption}</div>
                 </div>
               ))}
             </div>

@@ -20,7 +20,7 @@ const EnergySection: React.FC = () => {
             and tailor our solutions to meet their specific requirements.
           </div>
         </div>
-        <div className="mt-[65px] w-full h-[481px] relative">
+        <div className="mt-[65px] w-full h-[518px] relative">
           <Image
             src="/assets/images/energy-banner.jpg"
             alt="energy banner"

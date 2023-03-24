@@ -4,7 +4,9 @@ import Link from "next/link";
 import React from "react";
 
 export interface NavbarProps {
-  theme: "light" | "dark";
+  theme: "light" | "dark" | "transparent";
+  logoTheme: "light" | "dark";
+  optionTheme: "light" | "dark";
 }
 
 const tabs = [
@@ -25,19 +27,28 @@ const tabs = [
     type: "single",
   },
 ];
-const Navbar: React.FC<NavbarProps> = ({ theme = "light" }) => {
+
+const navbarThemeColors = {
+  light: "bg-neutral-0",
+  dark: "bg-neutral-900",
+  transparent: "",
+};
+
+const Navbar: React.FC<NavbarProps> = ({
+  theme = "light",
+  logoTheme = "light",
+  optionTheme = "light",
+}) => {
   return (
     <nav
-      className={`${
-        theme === "light" ? "bg-neutral-0" : "bg-neutral-900"
-      } h-[120px] flex items-center w-full`}
+      className={`${navbarThemeColors[theme]} h-[120px] flex items-center w-full`}
     >
       <div className="h-14 w-full">
         <div className="container px-8 2xl:px-40 mx-auto flex items-center justify-between h-14">
           <div>
             <Link href="/">
               <Image
-                src={`/assets/images/logo-${theme}.png`}
+                src={`/assets/images/logo-${logoTheme}.png`}
                 width={203.51}
                 height={57.87}
                 placeholder="blur"
@@ -48,7 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme = "light" }) => {
           </div>
           <div className="flex items-center">
             {tabs.map(({ label }) => (
-              <NavTab key={label} label={label} theme={theme} />
+              <NavTab key={label} label={label} theme={optionTheme} />
             ))}
           </div>
           <div>

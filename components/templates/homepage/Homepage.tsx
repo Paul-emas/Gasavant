@@ -16,30 +16,27 @@ const pageData = {
   title: "We believe in delivering the best quality possible",
   data: [
     {
-      title: "Our Mission",
+      title: "Our Vision",
       caption:
-        "To build innovative gas storage facilities that close the infrastructure gaps, enabling the efficient and secure storage of natural gas.",
+        "To be at the forefront of Gas infrastructure and development  in Africa’s energy industry.",
       iconUrl: "/assets/images/section-icons/flag.jpg",
     },
     {
       title: "Our Values",
       caption:
-        "We are committed to transparency, resource management, Customer Satisfaction, Quality assurance, and Environmental stewardship.",
+        "We prioritize client satisfaction, environmental stewardship, and societal advancement.",
       iconUrl: "/assets/images/section-icons/diamond.jpg",
     },
     {
       title: "Our Vision",
       caption:
-        "To become globally recognized and a trusted partner of choice for Gas Infrastructure Development, leading the way in the energy space across the world.",
+        "To close the Gas Infrastructure gap and accelerate economic development in Nigeria and Africa at large.",
       iconUrl: "/assets/images/section-icons/vision.jpg",
     },
   ],
 };
 
-const pageData2 = {
-  title: "Join the community, Services we offer",
-  pageCaption:
-    "Transparency, efficient management of resources, Advancement of society",
+export const pageData2 = {
   data: [
     {
       title: "Engineering Design",
@@ -83,12 +80,19 @@ const pageData2 = {
 const HomepageTemplate: React.FC = () => {
   return (
     <div>
-      <Navbar theme="dark" />
+      <Navbar theme="dark" logoTheme="dark" optionTheme="dark" />
       <Header />
       <HomepageLogo />
       <ServiceSection {...pageData} />
       <EnergySection />
-      <ServiceSection {...pageData2} />
+      <ServiceSection
+        {...{
+          title: "Join the community, Services we offer",
+          pageCaption:
+            "Transparency, efficient management of resources, Advancement of society",
+          ...pageData2,
+        }}
+      />
       <ProjectsSlider />
       <QualitySection />
       <HomepageFaq />
