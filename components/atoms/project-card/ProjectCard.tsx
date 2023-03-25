@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   desc,
 }) => {
   return (
-    <div className="float-shadow h-[437px] w-[389.33px] overflow-hidden">
+    <div className="float-shadow h-[437px] w-full overflow-hidden">
       <div className="relative h-[304px] w-full">
         <Image
           src={imageUrl}
