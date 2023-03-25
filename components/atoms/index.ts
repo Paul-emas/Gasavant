@@ -5,6 +5,7 @@ import HeadingBanner from "./heading-banner/HeadingBanner";
 import AboutHeader from "./about-header/AboutHeader";
 import AboutContentCard from "./about-content-card/AboutContentCard";
 import ProjectCard from "./project-card/ProjectCard";
+import Slider from "./slider/Slider";
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   AboutHeader,
   AboutContentCard,
   ProjectCard,
+  Slider,
 };

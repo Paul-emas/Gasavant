@@ -14,7 +14,7 @@ import {
 const AboutTemplate: React.FC = () => {
   return (
     <div>
-      <div className="h-[872px] bg-primary-50 overflow-hidden">
+      <div className="h-[872px] overflow-hidden bg-primary-50">
         <Navbar logoTheme="light" theme="transparent" optionTheme="light" />
         <AboutHeader />
       </div>

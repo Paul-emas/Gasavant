@@ -13,6 +13,7 @@ import AboutCounter from "./about-counter/AboutCounter";
 import AboutInfo from "./about-info/AboutInfo";
 import AboutEnergy from "./about-energy/AboutEnergy";
 import WhyUs from "./why-us/WhyUs";
+import ProjectHeader from "./project-header/ProjectHeader";
 import AboutProject from "./about-project/AboutProject";
 import ProjectList from "./project-list/ProjectList";
 
@@ -32,6 +33,7 @@ export {
   AboutInfo,
   AboutEnergy,
   WhyUs,
+  ProjectHeader,
   AboutProject,
   ProjectList,
 };
