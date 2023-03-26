@@ -82,9 +82,9 @@ const HomepageTemplate: React.FC = () => {
   const [isFirstTimeUser, setIsFirstimeUser] = useState<boolean>(false);
 
   useEffect(() => {
-    if (!localStorage.getItem("user")) {
+    if (!localStorage.getItem("first-time-user")) {
       setIsFirstimeUser(true);
-      localStorage.setItem("user", JSON.stringify(true));
+      localStorage.setItem("first-time-user", JSON.stringify(true));
     } else {
       setIsFirstimeUser(false);
     }
