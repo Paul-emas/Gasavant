@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import {
   EnergySection,
   Footer,
@@ -10,7 +11,7 @@ import {
   ServiceSection,
   StatsSection,
 } from "components/organisms";
-import React from "react";
+import { Loader } from "components/atoms";
 
 const pageData = {
   title: "We believe in delivering the best quality possible",
@@ -78,8 +79,20 @@ export const pageData2 = {
 };
 
 const HomepageTemplate: React.FC = () => {
+  const [isFirstTimeUser, setIsFirstimeUser] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!localStorage.getItem("new-user")) {
+      setIsFirstimeUser(true);
+      localStorage.setItem("new-user", JSON.stringify(true));
+    } else {
+      setIsFirstimeUser(false);
+    }
+  }, []);
+
   return (
     <div>
+      {isFirstTimeUser ? <Loader /> : null}
       <Navbar theme="dark" logoTheme="dark" optionTheme="dark" />
       <Header />
       <HomepageLogo />

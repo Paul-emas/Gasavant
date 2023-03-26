@@ -164,3 +164,7 @@ a {
     rgba(0, 18, 40, 0.9) 83.69%
   );
 }
+
+.transition-easeInOutQuint {
+  transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}

@@ -6,6 +6,7 @@ import AboutHeader from "./about-header/AboutHeader";
 import AboutContentCard from "./about-content-card/AboutContentCard";
 import ProjectCard from "./project-card/ProjectCard";
 import Slider from "./slider/Slider";
+import Loader from "./loader/Loader";
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   AboutContentCard,
   ProjectCard,
   Slider,
+  Loader,
 };
