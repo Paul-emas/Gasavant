@@ -5,6 +5,7 @@ import { Navigation } from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/css/navigation";
 import { ArrowRightIcon, ArrowUpRightIcon } from "icons";
+import Link from "next/link";
 
 const slideImages = [
   "/assets/images/slider/project-slide-1.jpg",
@@ -93,7 +94,9 @@ const Slider: React.FC<SliderProps> = ({
                           <div>
                             <div className="flex h-[60px] w-[60px] items-center justify-center bg-primary-50">
                               <div className="scale-110">
-                                <ArrowUpRightIcon theme="secondary" />
+                                <Link href="projects/lgp">
+                                  <ArrowUpRightIcon theme="secondary" />
+                                </Link>
                               </div>
                             </div>
                           </div>

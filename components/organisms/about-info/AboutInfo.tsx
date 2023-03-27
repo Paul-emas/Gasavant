@@ -12,7 +12,7 @@ const content1 = {
 const content2 = {
   title: "We are focused on delivering top class projects",
   caption:
-    "We work with our clients to understand the rapidly evolving  energy landscape, policies, development trends and implications for their respective investments in the resource- dense African countries who aspire to be the next exporters of energy.",
+    "We engineer end‑to‑end solutions to bridge infrastructure gaps that hamper the anticipated growth in the Natural Gas and LPG value chain in Nigeria. With one aligned vision, we work hand in hand to bridge gaps between resources and end‑user markets as Nigerian begins actualize the ambitions of The Decade of Gas.",
   imageUrl: "/assets/images/workman-2.jpg",
   alt: "worker image 2",
   align: "right",
@@ -24,10 +24,9 @@ const AboutInfo: React.FC = () => {
       <div className="container mx-auto px-20 2xl:px-40">
         <SectionHeading
           {...{
-            title:
-              "Bringing Africa to the forefront of the global Gas Industry",
+            title: "Bridging the gas infrastructure gap in sub- Saharan Africa",
             pageCaption:
-              "Transparency, efficient management of resources, Advancement of society",
+              "We are committed to providing our clients with peace of mind and the assurance that their gas storage needs are being met with the highest level of quality and safety",
             maxWidth: "max-w-[750px]",
           }}
         />

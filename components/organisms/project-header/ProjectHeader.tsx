@@ -1,5 +1,6 @@
 import { Button } from "components/atoms";
 import AvatarGroup from "components/atoms/avatar-group/AvatarGroup";
+import Link from "next/link";
 import React from "react";
 
 const ProjectHeader = () => {
@@ -12,34 +13,38 @@ const ProjectHeader = () => {
               <div className="max-w-[578px]">
                 <div className="max-w-[578px]">
                   <div className="text-5.5xl font-bold leading-[68px] text-primary-50">
-                    We build state of the art gas storage tanks
+                    If you can imagine it, we can create it
                   </div>
                   <div className="mt-6 text-4.5xl text-neutral-60">
-                    We build state of the art gas storage tanks across the world
-                    starting from the grassroot and gas flares.
+                    We engineer and build innovative storage gas facilities that
+                    meet the evolving energy needs of today and tomorrow.
                   </div>
                 </div>
                 <div className="mt-14 flex items-center gap-x-2">
                   <div>
-                    <Button
-                      label="Our services"
-                      variant="dark"
-                      size="large-with-icon"
-                      isWithIcon
-                      iconPosition="right"
-                      iconType="arrow-right-up"
-                      iconColor="dark"
-                    />
+                    <Link href="/services">
+                      <Button
+                        label="Our services"
+                        variant="dark"
+                        size="large-with-icon"
+                        isWithIcon
+                        iconPosition="right"
+                        iconType="arrow-right-up"
+                        iconColor="dark"
+                      />
+                    </Link>
                   </div>
                   <div>
-                    <Button
-                      label="View projects"
-                      variant="darker"
-                      size="large-with-icon"
-                      isWithIcon
-                      iconPosition="right"
-                      iconType="arrow-right"
-                    />
+                    <Link href="/projects">
+                      <Button
+                        label="View projects"
+                        variant="darker"
+                        size="large-with-icon"
+                        isWithIcon
+                        iconPosition="right"
+                        iconType="arrow-right"
+                      />
+                    </Link>
                   </div>
                 </div>
                 <AvatarGroup />

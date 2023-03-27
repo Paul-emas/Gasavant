@@ -3,20 +3,20 @@ import { SectionHeading } from "components/atoms";
 
 export const stats = [
   {
-    title: "$1.5bn",
-    caption: "Project value",
+    title: "800MT",
+    caption: "Monthly Gas Supplied",
   },
   {
-    title: "2,345",
-    caption: "Project value",
+    title: "500MT",
+    caption: "Storage Capacity Built",
   },
   {
-    title: "8.5M",
-    caption: "Project value",
+    title: "8+",
+    caption: "Completed projects",
   },
   {
-    title: "44+",
-    caption: "Project value",
+    title: "99.9%",
+    caption: "Safety Compliant",
   },
 ];
 
@@ -24,27 +24,27 @@ const StatsSection: React.FC = () => {
   return (
     <section className="pb-[90px]">
       <div className="h-[495px] bg-primary-500"></div>
-      <div className="container mx-auto px-20 2xl:px-40 h-[694px] bg-white -mt-96">
+      <div className="container mx-auto -mt-96 h-[694px] bg-white px-20 2xl:px-40">
         <div className="pt-[97px]">
           <SectionHeading
             {...{
-              title: "Join the community, change the future",
+              title: "We are committed to shaping the future",
               pageCaption:
-                "Transparency, efficient management of resources, Advancement of society",
+                "Leading the expansion of gas infrastructure in sub- saharan Africa ",
             }}
           />
-          <div className="3xl:px-16 mt-[65px]">
-            <div className="h-[275px] border border-neutral-40 flex justify-center items-center mb-[70px]">
+          <div className="mt-[65px] 3xl:px-16">
+            <div className="mb-[70px] flex h-[275px] items-center justify-center border border-neutral-40">
               {stats.map(({ title, caption }) => (
                 <div
                   key={title}
-                  className="h-[155px] border-r-[1.5px] border-neutral-40 w-1/4 flex items-center justify-center text-center last:border-r-0"
+                  className="flex h-[155px] w-1/4 items-center justify-center border-r-[1.5px] border-neutral-40 text-center last:border-r-0"
                 >
                   <div>
-                    <div className="text-5.5xl text-neutral-900 font-bold">
+                    <div className="text-5.5xl font-bold text-neutral-900">
                       {title}
                     </div>
-                    <div className="text-neutral-500 text-base">{caption}</div>
+                    <div className="text-base text-neutral-500">{caption}</div>
                   </div>
                 </div>
               ))}

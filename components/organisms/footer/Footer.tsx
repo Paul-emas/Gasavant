@@ -28,7 +28,7 @@ const footerData = [
       },
       {
         text: "Our team",
-        slug: "/project",
+        slug: "/team",
       },
     ],
   },
@@ -37,27 +37,27 @@ const footerData = [
     links: [
       {
         text: "Engineering design",
-        slug: "/about",
+        slug: "/services",
       },
       {
         text: "Construction",
-        slug: "/about",
+        slug: "/services",
       },
       {
         text: "Maintenance",
-        slug: "/about",
+        slug: "/services",
       },
       {
         text: "LPG",
-        slug: "/about",
+        slug: "/services",
       },
       {
         text: "Procurement",
-        slug: "/project",
+        slug: "/services",
       },
       {
         text: "Storage",
-        slug: "/project",
+        slug: "/serivces",
       },
     ],
   },
@@ -66,11 +66,11 @@ const footerData = [
     links: [
       {
         text: "FAQs",
-        slug: "/about",
+        slug: "/faqs",
       },
       {
-        text: "info@gasavantafrica.com",
-        slug: "/about",
+        text: "connect@gasavantafrica.com",
+        slug: "#",
       },
       {
         text: "+234 818 842 0514",
@@ -108,7 +108,7 @@ const footerData = [
 const Footer: React.FC = () => {
   return (
     <footer className="bg-neutral-900 pt-[113px] pb-[108px]">
-      <div className="container px-20 mx-auto 2xl:px-40">
+      <div className="container mx-auto px-20 2xl:px-40">
         <div className="grid grid-cols-6">
           <div className="col-span-2">
             <Image
@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
               placeholder="blur"
               blurDataURL="/assets/images/logo-dark.png"
             />
-            <div className="mt-8 text-base font-switz text-primary-50 max-w-[300px]">
+            <div className="mt-8 max-w-[300px] font-switz text-base text-primary-50">
               We engineer end‑to‑end solutions to bridge infrastructure gaps
               that hamper the anticipated growth in the Natural Gas and LPG
               value chain in Nigeria.
@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
           </div>
           {footerData.map(({ title, links, icons }) => (
             <div key={title} className="col-span-1">
-              <div className="text-neutral-80 font-semibold font-switz mb-8">
+              <div className="mb-8 font-switz font-semibold text-neutral-80">
                 {title}
               </div>
               {links && links.length > 0
@@ -135,7 +135,7 @@ const Footer: React.FC = () => {
                     <div key={link.text} className="mb-7 last:mb-0">
                       <Link
                         href={link.slug}
-                        className="text-base text-primary-50 hover:text-primary-500 font-switz"
+                        className="font-switz text-base text-primary-50 hover:text-primary-500"
                       >
                         {link.text}
                       </Link>
@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
                     <div key={icon.text} className="mb-7 last:mb-0">
                       <a
                         href={icon.url}
-                        className="text-base text-primary-50 hover:text-primary-500 flex items-center space-x-2 font-switz"
+                        className="flex items-center space-x-2 font-switz text-base text-primary-50 hover:text-primary-500"
                       >
                         <Image
                           src={icon.iconUrl}
@@ -163,8 +163,8 @@ const Footer: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className="mt-[185px] border-b border-neutral-400 h-1"></div>
-        <div className="mt-12 flex justify-between text-neutral-0 text-base font-switz">
+        <div className="mt-[185px] h-1 border-b border-neutral-400"></div>
+        <div className="mt-12 flex justify-between font-switz text-base text-neutral-0">
           <div>8, Water Corporation, Dr. Oniru, Lagos, Nigeria.</div>
           <div>© Gasavant Africa 2023. All rights reserved.</div>
         </div>

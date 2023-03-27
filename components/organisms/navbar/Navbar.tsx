@@ -12,18 +12,22 @@ export interface NavbarProps {
 const tabs = [
   {
     label: "Home",
+    link: "/",
     type: "single",
   },
   {
     label: "About us",
+    link: "/about",
     type: "single",
   },
   {
     label: "Our services",
+    link: "/services",
     type: "dropdown",
   },
   {
-    label: "Our products",
+    label: "Our project",
+    link: "/projects",
     type: "single",
   },
 ];
@@ -41,10 +45,10 @@ const Navbar: React.FC<NavbarProps> = ({
 }) => {
   return (
     <nav
-      className={`${navbarThemeColors[theme]} h-[120px] flex items-center w-full`}
+      className={`${navbarThemeColors[theme]} flex h-[120px] w-full items-center`}
     >
       <div className="h-14 w-full">
-        <div className="container px-8 2xl:px-40 mx-auto flex items-center justify-between h-14">
+        <div className="container mx-auto flex h-14 items-center justify-between px-8 2xl:px-40">
           <div>
             <Link href="/">
               <Image
@@ -58,8 +62,10 @@ const Navbar: React.FC<NavbarProps> = ({
             </Link>
           </div>
           <div className="flex items-center">
-            {tabs.map(({ label }) => (
-              <NavTab key={label} label={label} theme={optionTheme} />
+            {tabs.map(({ label, link }) => (
+              <Link key={label} href={link}>
+                <NavTab label={label} theme={optionTheme} />
+              </Link>
             ))}
           </div>
           <div>

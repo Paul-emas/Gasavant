@@ -23,7 +23,7 @@ const ServicesTemplate: React.FC = () => {
           <div>
             <div className="flex justify-between">
               <div className="max-w-[416px] text-5xl font-bold leading-[58px] text-neutral-900">
-                We provide a wide range of services
+                We provide efficient EPC and Gas supply.
               </div>
               <div className="max-w-[529px] font-switz text-4.5xl text-neutral-800">
                 Our team of experienced professionals is dedicated to providing

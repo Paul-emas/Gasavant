@@ -4,18 +4,11 @@ import React from "react";
 
 const ProjectsSlider = () => {
   return (
-    <section className="pt-[124px] pb-10 overflow-hidden">
-      <SectionHeading
-        {...{
-          title: "Take a look at our recent projects",
-          pageCaption:
-            "Transparency, efficient management of resources, Advancement of society",
-        }}
-      />
-      <div className="flex gap-x-3.5 mt-[107px] w-[4079px]">
+    <section className="overflow-hidden pt-[74px] pb-10">
+      <div className="flex w-[4079px] gap-x-3.5">
         {[...Array(10)].map((value) => (
           <div key={value}>
-            <div className="w-[407.4px] h-[309.4px] relative">
+            <div className="relative h-[309.4px] w-[407.4px]">
               <Image
                 src="/assets/images/slider/slide-4.jpg"
                 alt="project slider image"
@@ -25,10 +18,10 @@ const ProjectsSlider = () => {
           </div>
         ))}
       </div>
-      <div className="flex gap-x-3.5 mt-3.5 w-[4079px]">
+      <div className="mt-3.5 flex w-[4079px] gap-x-3.5">
         {[...Array(10)].map((value) => (
           <div key={value}>
-            <div className="w-[407.4px] h-[309.4px] relative">
+            <div className="relative h-[309.4px] w-[407.4px]">
               <Image
                 src="/assets/images/slider/slide-2.jpg"
                 alt="project slider image"

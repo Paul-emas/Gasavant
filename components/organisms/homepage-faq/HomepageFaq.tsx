@@ -1,13 +1,41 @@
-import { SectionHeading } from "components/atoms";
 import React, { useState } from "react";
+import { SectionHeading } from "components/atoms";
+
+const questions = [
+  {
+    id: 11,
+    ques: "What is LPG?",
+    ans: "",
+  },
+  {
+    id: 12,
+    ques: "What is the difference between butane and propane?",
+    ans: "You'll make a better win in digital if you know how to work around their creative contents and how to amplify them to the markets that need it most.",
+  },
+  {
+    id: 13,
+    ques: "Does Gasavant operate and maintain the LPG plants they’ve built?",
+    ans: "",
+  },
+  {
+    id: 14,
+    ques: "What is the Nigerian standard for LPG mix of propane and butane?",
+    ans: "",
+  },
+  {
+    id: 15,
+    ques: "What is the minimum land size requirement?",
+    ans: "",
+  },
+];
 
 const HomepageFaq = () => {
-  const [activeQues, setActiveQues] = useState<any>(null);
+  const [activeQues, setActiveQues] = useState<any>(questions[0]);
   const [open, setOpen] = useState(false);
 
-  function handleActiveQues(val: number) {
-    if (activeQues !== val) {
-      setActiveQues(val);
+  function handleActiveQues(ques: any) {
+    if (activeQues?.id !== ques.id) {
+      setActiveQues(ques);
       setOpen(true);
     } else {
       setActiveQues(null);
@@ -21,35 +49,33 @@ const HomepageFaq = () => {
           <SectionHeading
             {...{
               title: "Frequently asked questions",
-              pageCaption: "Transparency, efficient management",
+              pageCaption: "We’ve got answers to your questions",
               align: "left",
               maxWidth: "max-w-[440px]",
             }}
           />
           <div>
-            {[...Array(5)].map((val, ind) => (
-              <div key={val} className="mb-10">
+            {questions.map((item) => (
+              <div key={item.id} className="mb-10">
                 <button
-                  onClick={() => handleActiveQues(val)}
-                  className="flex items-center m-0 p-0 outline-none justify-between w-full group text-neutral-900 hover:text-primary-500 active:text-primary-700"
+                  onClick={() => handleActiveQues(item)}
+                  className="group m-0 flex w-full items-center justify-between p-0 text-neutral-900 outline-none hover:text-primary-500 active:text-primary-700"
                 >
-                  <span className="flex text-[25px] font-switz font-semibold">
-                    This is a sample question
+                  <span className="flex max-w-[500px] text-left font-switz text-[25px] font-semibold">
+                    {item.ques}
                   </span>
-                  <span className="w-12 h-12 rounded-full border border-neutral-50 flex items-center justify-center text-3xl group-hover:border-primary-500">
-                    {activeQues === val && open ? "-" : "+"}
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full border border-neutral-50 text-3xl group-hover:border-primary-500">
+                    {activeQues?.id === item.id && open ? "-" : "+"}
                   </span>
                 </button>
                 <div
                   className={`${
-                    activeQues === val && open
-                      ? "overflow-auto h-auto mt-6 duration-200"
-                      : "overflow-hidden h-0 duration-200"
-                  } max-w-[578px] text-4.5xl font-switz text-neutral-600 transition-all`}
+                    activeQues?.id === item.id && open
+                      ? "mt-6 h-auto overflow-auto duration-200"
+                      : "h-0 overflow-hidden duration-200"
+                  } max-w-[578px] font-switz text-4.5xl text-neutral-600 transition-all`}
                 >
-                  You&apos;ll make a better win in digital if you know how to
-                  work around their creative contents and how to amplify them to
-                  the markets that need it most.
+                  {item.ans}
                 </div>
               </div>
             ))}

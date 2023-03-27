@@ -10,19 +10,20 @@ const TeamTemplate: React.FC = () => {
       <Navbar theme="light" logoTheme="light" optionTheme="light" />
       <HeadingBanner
         {...{
-          title: "Our engineering team of experts",
+          title: "Our Executive management team",
           caption:
-            "We are committed to being transparent, efficient in resource management , and client satisfaction",
+            "We are a tight knit agile team of industry subject matter professionals",
+          maxWidth: "max-w-[554px]",
         }}
       />
       <section className="pb-56">
         <FloatSectionWrapper>
           <div>
             <div className="flex justify-between">
-              <div className="text-neutral-900 text-5xl max-w-[385px] leading-[58px] font-bold">
+              <div className="max-w-[385px] text-5xl font-bold leading-[58px] text-neutral-900">
                 Over 50+ years of experience
               </div>
-              <div className="max-w-[529px] text-neutral-800 font-switz text-4.5xl">
+              <div className="max-w-[529px] font-switz text-4.5xl text-neutral-800">
                 Our expert team of engineers and technicians are committed to
                 delivering safe, reliable, and efficient solutions for storing
                 natural gas, hydrogen, and other gases. We understand the
@@ -42,13 +43,13 @@ const TeamTemplate: React.FC = () => {
                       placeholder="blur"
                       blurDataURL="/assets/images/team/avatar.jpg"
                       alt="Team profile"
-                      className="rounded-full mx-auto"
+                      className="mx-auto rounded-full"
                     />
-                    <div className="text-center mt-6">
-                      <div className="text-4.5xl text-neutral-900 font-switz font-semibold">
+                    <div className="mt-6 text-center">
+                      <div className="font-switz text-4.5xl font-semibold text-neutral-900">
                         Name Surname
                       </div>
-                      <div className="text-base text-neutral-900 font-switz mt-2 font-light">
+                      <div className="mt-2 font-switz text-base font-light text-neutral-900">
                         Position
                       </div>
                     </div>

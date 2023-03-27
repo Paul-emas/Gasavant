@@ -1,6 +1,7 @@
 import { Button } from "components/atoms";
 import AvatarGroup from "components/atoms/avatar-group/AvatarGroup";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Header: React.FC = () => {
@@ -10,37 +11,40 @@ const Header: React.FC = () => {
         <div className="grid h-full grid-cols-2">
           <div>
             <div className="mt-[112px]">
-              <div className="max-w-[578px]">
+              <div className="max-w-[592px]">
                 <div className="text-5.5xl font-bold leading-[68px] text-primary-50">
-                  We build state of the art gas storage tanks
+                  We build high-quality gas storage facilities
                 </div>
-                <div className="mt-6 text-4.5xl text-neutral-60">
-                  We build state of the art gas storage tanks across the world
-                  starting from the grassroot and gas flares.
+                <div className="mt-6 max-w-[560px] text-4.5xl text-neutral-60">
+                  Engineering gas storage infrastructure that surpasses the
+                  standard of the evolving power industry.
                 </div>
               </div>
               <div className="mt-14 flex items-center gap-x-2">
                 <div>
-                  {" "}
-                  <Button
-                    label="Our services"
-                    variant="dark"
-                    size="large-with-icon"
-                    isWithIcon
-                    iconPosition="right"
-                    iconType="arrow-right-up"
-                    iconColor="dark"
-                  />
+                  <Link href="/services">
+                    <Button
+                      label="Our services"
+                      variant="dark"
+                      size="large-with-icon"
+                      isWithIcon
+                      iconPosition="right"
+                      iconType="arrow-right-up"
+                      iconColor="dark"
+                    />
+                  </Link>
                 </div>
                 <div>
-                  <Button
-                    label="View projects"
-                    variant="darker"
-                    size="large-with-icon"
-                    isWithIcon
-                    iconPosition="right"
-                    iconType="arrow-right"
-                  />
+                  <Link href="/projects">
+                    <Button
+                      label="View projects"
+                      variant="darker"
+                      size="large-with-icon"
+                      isWithIcon
+                      iconPosition="right"
+                      iconType="arrow-right"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>

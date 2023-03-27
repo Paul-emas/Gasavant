@@ -3,40 +3,39 @@ import { FloatSectionWrapper } from "components/molecules";
 
 const questions = [
   {
-    ques: "What is your normal turn around time?",
+    ques: "What is LPG?",
     paragraphs: [
-      "Super blocks is created for individual web designers and web design agencies.",
-      "It is also great if youre just starting out in web design, Super blocks and Framer make it easy to bring your creative visions to life. No coding skills required - simply mix and match blocks to create a custom website that perfectly captures your brand's essence.",
-      "You can now launch a stunning website in no time - cutting your design time by up to 80%",
+      "LPG, otherwise known as Liquified Petroleum Gas is the liquefied form of petroleum gases released during the extraction of crude oil and natural gas. It  is composed of a highly flammable mixture of hydrocarbon gases, specifically propane, butylene, propylene,  isobutane and n- butane. LPG is commonly used in residential heating, cooking, fuel in cars and industrial power.",
     ],
   },
   {
-    ques: "What is your normal turn around time?",
+    ques: "What is the difference between butane and propane?",
     paragraphs: [
-      "Super blocks is created for individual web designers and web design agencies.",
-      "You can now launch a stunning website in no time - cutting your design time by up to 80%",
+      "The key difference between the two is their boiling point. Propane is capable of handling lower temperatures, making it suitable for outdoor storage; while Butane is better stored indoors.",
     ],
   },
   {
-    ques: "What is your normal turn around time?",
+    ques: "Does Gasavant operate and maintain the LPG plants they’ve built?",
     paragraphs: [
-      "Super blocks is created for individual web designers and web design agencies.",
-      "It is also great if youre just starting out in web design, Super blocks and Framer make it easy to bring your creative visions to life. No coding skills required - simply mix and match blocks to create a custom website that perfectly captures your brand's essence.",
-      "You can now launch a stunning website in no time - cutting your design time by up to 80%",
+      "Gasavant provides maintenance of our constructed LPG plants as an optional service according to client needs.",
     ],
   },
   {
-    ques: "What is your normal turn around time?",
+    ques: "What is the Nigerian standard for LPG mix of propane and butane?",
     paragraphs: [
-      "Super blocks is created for individual web designers and web design agencies.",
-      "You can now launch a stunning website in no time - cutting your design time by up to 80%",
+      "Though the NMDPRA has not exclusively published strict regulations on the LPG  mix, the industry standard approves of a 70 parts propane  to 30 parts butane mix. ",
     ],
   },
   {
-    ques: "What is your normal turn around time?",
+    ques: "What is the minimum land size requirement?",
     paragraphs: [
-      "Super blocks is created for individual web designers and web design agencies.",
-      "You can now launch a stunning website in no time - cutting your design time by up to 80%",
+      "The minimum land size requirement is 1000 square meters (sqm)",
+    ],
+  },
+  {
+    ques: "Would  Gasavant provide LPG supply after construction?",
+    paragraphs: [
+      "We are able to provide LPG supply after construction if the owner of the plant deems it necessary.",
     ],
   },
 ];
@@ -51,14 +50,14 @@ const FaqQuestions: React.FC = () => {
             className="mb-[86px] border-b border-neutral-40 last:border-b-0"
           >
             <div className="flex justify-between">
-              <div className="text-neutral-900 font-switz font-semibold max-w-[329px] text-2xl">
+              <div className="max-w-[329px] font-switz text-2xl font-semibold text-neutral-900">
                 {ques}
               </div>
               <div className="max-w-[553px] pb-[86px]">
                 {paragraphs.map((para) => (
                   <div
                     key={para}
-                    className="text-4.5xl text-neutral-500 font-switz mb-4"
+                    className="mb-4 font-switz text-4.5xl text-neutral-500"
                   >
                     {para}
                   </div>
