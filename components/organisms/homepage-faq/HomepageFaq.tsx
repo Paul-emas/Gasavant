@@ -61,7 +61,7 @@ const HomepageFaq = () => {
                   onClick={() => handleActiveQues(item)}
                   className="group m-0 flex w-full items-center justify-between p-0 text-neutral-900 outline-none hover:text-primary-500 active:text-primary-700"
                 >
-                  <div className="flex max-w-[280px] text-left font-switz text-base font-semibold md:max-w-[500px] md:text-[25px]">
+                  <div className="flex max-w-[280px] text-left font-switz text-base font-semibold md:max-w-[500px] md:text-[25px] md:leading-8">
                     {item.ques}
                   </div>
                   <span className="flex h-12 w-12 items-center justify-center rounded-full border-neutral-50 text-3xl group-hover:border-primary-500 md:border">
