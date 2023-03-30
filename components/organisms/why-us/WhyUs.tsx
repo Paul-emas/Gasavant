@@ -4,43 +4,43 @@ import { Button } from "components/atoms";
 
 export const partnersData = [
   {
-    imageUrl: "/assets/images/logos/flowgas.jpg",
+    imageUrl: "/assets/images/logos/flowgas.png",
     width: 138,
     height: 50,
     alt: "Flowgas logo",
   },
   {
-    imageUrl: "/assets/images/logos/techoil.jpg",
+    imageUrl: "/assets/images/logos/techoil.png",
     width: 161,
     height: 41,
     alt: "Techoil logo",
   },
   {
-    imageUrl: "/assets/images/logos/northwest.jpg",
+    imageUrl: "/assets/images/logos/northwest.png",
     width: 191,
     height: 51,
     alt: "Northwest logo",
   },
   {
-    imageUrl: "/assets/images/logos/oryx.jpg",
+    imageUrl: "/assets/images/logos/oryx.png",
     width: 121,
     height: 47,
     alt: "Northwest logo",
   },
   {
-    imageUrl: "/assets/images/logos/stockgap.jpg",
+    imageUrl: "/assets/images/logos/stockgap.png",
     width: 143,
     height: 55,
     alt: "Stockgap logo",
   },
   {
-    imageUrl: "/assets/images/logos/aab.jpg",
+    imageUrl: "/assets/images/logos/aab.png",
     width: 140,
     height: 46,
     alt: "AAb logo",
   },
   {
-    imageUrl: "/assets/images/logos/aarano.jpg",
+    imageUrl: "/assets/images/logos/aarano.png",
     width: 138,
     height: 51,
     alt: "AA Rano logo",
@@ -50,16 +50,16 @@ export const partnersData = [
 const WhyUs: React.FC = () => {
   return (
     <section className="pt-[193px] pb-[213px]">
-      <div className="container mx-auto px-20 2xl:px-40 bg-white">
+      <div className="container mx-auto bg-white px-20 2xl:px-40">
         <div className="grid grid-cols-2">
           <div className="max-w-[451px]">
-            <div className="text-primary-500 tracking-[0.25em] font-switz uppercase font-medium">
+            <div className="font-switz font-medium uppercase tracking-[0.25em] text-primary-500">
               Why choose us
             </div>
-            <div className="mt-4 leading-[58px] text-5xl font-bold text-neutral-900">
+            <div className="mt-4 text-5xl font-bold leading-[58px] text-neutral-900">
               Years of industry-leading experience
             </div>
-            <div className="mt-7 text-neutral-900 font-switz text-base">
+            <div className="mt-7 font-switz text-base text-neutral-900">
               Our team of professionals are ready to pick up conversations with
               you on a project. Let’s work together and make things happen.
             </div>
@@ -74,9 +74,9 @@ const WhyUs: React.FC = () => {
             />
           </div>
           <div className="mt-10">
-            <div className="w-[595.13px] flex justify-between flex-wrap items-center">
+            <div className="flex w-[595.13px] flex-wrap items-center justify-between">
               {partnersData.map(({ imageUrl, width, height, alt }) => (
-                <div key={imageUrl} className="w-1/3 mb-[60px]">
+                <div key={imageUrl} className="mb-[60px] w-1/3">
                   <Image
                     src={imageUrl}
                     width={width}

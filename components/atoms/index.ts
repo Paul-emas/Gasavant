@@ -7,6 +7,7 @@ import AboutContentCard from "./about-content-card/AboutContentCard";
 import ProjectCard from "./project-card/ProjectCard";
 import Slider from "./slider/Slider";
 import Loader from "./loader/Loader";
+import PopoverMenu from "./popover-menu/PopoverMenu";
 
 export {
   Button,
@@ -18,4 +19,5 @@ export {
   ProjectCard,
   Slider,
   Loader,
+  PopoverMenu,
 };

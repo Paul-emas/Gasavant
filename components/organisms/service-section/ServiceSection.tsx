@@ -52,7 +52,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
                 <div className="mt-6 text-4.5xl font-semibold text-neutral-900">
                   {title}
                 </div>
-                <div className="mx-auto mt-2 max-w-[320px] px-8 text-neutral-500">
+                <div className="mx-auto mt-2 px-8 text-center text-neutral-500">
                   {caption}
                 </div>
               </div>

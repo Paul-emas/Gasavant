@@ -1,7 +1,8 @@
-import { Button, NavTab } from "components/atoms";
-import Image from "next/image";
+import React, { Fragment } from "react";
 import Link from "next/link";
-import React from "react";
+import Image from "next/image";
+import { Popover, Transition } from "@headlessui/react";
+import { Button, NavTab, PopoverMenu } from "components/atoms";
 
 export interface NavbarProps {
   theme: "light" | "dark" | "transparent";
@@ -62,10 +63,16 @@ const Navbar: React.FC<NavbarProps> = ({
             </Link>
           </div>
           <div className="flex items-center">
-            {tabs.map(({ label, link }) => (
-              <Link key={label} href={link}>
-                <NavTab label={label} theme={optionTheme} />
-              </Link>
+            {tabs.map(({ label, link, type }) => (
+              <Fragment key={label}>
+                {type === "dropdown" ? (
+                  <PopoverMenu link={link} label={label} theme={optionTheme} />
+                ) : (
+                  <Link href={link}>
+                    <NavTab label={label} theme={optionTheme} />
+                  </Link>
+                )}
+              </Fragment>
             ))}
           </div>
           <div>

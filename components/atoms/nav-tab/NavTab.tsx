@@ -1,3 +1,4 @@
+import { ChevronDownIcon } from "icons";
 import React, { ButtonHTMLAttributes } from "react";
 
 export interface NavTabProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -9,13 +10,7 @@ export interface NavTabProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const NavTab: React.FC<NavTabProps> = (
-  {
-    className = "",
-    label,
-    iconPosition = "right",
-    iconType = "chevron-down",
-    theme = "light",
-  },
+  { className = "", label, iconPosition = "right", iconType, theme = "light" },
   ...props
 ) => {
   const themeStyles =
@@ -27,12 +22,16 @@ const NavTab: React.FC<NavTabProps> = (
   return (
     <button
       type="button"
-      className={`${className} ${themeStyles} px-5 py-4 font-switz`}
+      className={`${className} ${themeStyles} flex items-center px-5 py-4 font-switz`}
       {...props}
     >
-      {iconPosition === "left" ? <span></span> : null}
+      {iconPosition === "left" && iconType ? (
+        <span className="mr-3.5 rotate-90 transform text-xl">&rsaquo;</span>
+      ) : null}
       <span>{label}</span>
-      {iconPosition === "right" ? <span></span> : null}
+      {iconPosition === "right" && iconType ? (
+        <span className="ml-3.5 rotate-90 transform text-xl">&rsaquo;</span>
+      ) : null}
     </button>
   );
 };

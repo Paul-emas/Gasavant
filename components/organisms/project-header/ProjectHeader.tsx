@@ -15,7 +15,7 @@ const ProjectHeader = () => {
                   <div className="text-5.5xl font-bold leading-[68px] text-primary-50">
                     If you can imagine it, we can create it
                   </div>
-                  <div className="mt-6 text-4.5xl text-neutral-60">
+                  <div className="mt-6 font-switz text-4.5xl text-neutral-60">
                     We engineer and build innovative storage gas facilities that
                     meet the evolving energy needs of today and tomorrow.
                   </div>

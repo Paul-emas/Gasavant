@@ -5,8 +5,6 @@ import {
   Navbar,
   ProjectList,
 } from "components/organisms";
-
-import { ArrowRightIcon } from "icons";
 import { Slider } from "components/atoms";
 
 const ProjectsTemplate: React.FC = () => {

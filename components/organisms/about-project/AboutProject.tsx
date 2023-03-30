@@ -29,9 +29,9 @@ const AboutProject: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-4 font-switz">
             <div className="w-[693px]">
-              <div className="text-4.5xl leading-6 text-neutral-800">
+              <div className="text-4.5xl leading-7 text-neutral-800">
                 Failure to invest the bare minimum in adapting to climate change
                 this decade, could cost emerging markets 12 times as much in
                 damages and lost growth. In our recent research we discuss how
@@ -43,7 +43,7 @@ const AboutProject: React.FC = () => {
                 improved my speed and productivity.
               </div>
             </div>
-            <div className="mt-16 text-4.5xl leading-6 text-neutral-800">
+            <div className="mt-16 text-4.5xl leading-7 text-neutral-800">
               Failure to invest the bare minimum in adapting to climate change
               this decade, could cost emerging markets 12 times as much in
               damages and lost growth. In our recent research we discuss how
