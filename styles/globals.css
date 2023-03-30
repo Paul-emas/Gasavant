@@ -88,11 +88,11 @@ a {
   }
 
   .btn-size-large {
-    @apply px-10 py-[22px] text-4.5xl;
+    @apply px-10 py-4 text-base md:px-10 md:py-[22px] md:text-4.5xl;
   }
 
   .btn-size-large-icon {
-    @apply py-5 pr-10 pl-8 text-4.5xl;
+    @apply px-10 py-4 text-base md:py-5 md:pr-10 md:pl-8 md:text-4.5xl;
   }
 
   .icon-primary svg > path {

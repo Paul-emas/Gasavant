@@ -9,7 +9,7 @@ const EnergySection: React.FC = () => {
           <div className="max-w-[478px] text-3.3xl font-bold leading-[37px] text-neutral-0 md:text-5xl md:leading-[58px]">
             Everything you need to make a difference
           </div>
-          <div className="mt-8 max-w-[634px] font-switz text-4.5xl text-neutral-30 md:mt-0">
+          <div className="mt-8 max-w-[634px] font-switz text-base text-neutral-30 md:mt-0 md:text-base">
             We believe that energy storage is a key component in the transition
             to a cleaner and more sustainable future. We build facilities that
             are designed with the latest technologies to ensure maximum

@@ -4,7 +4,7 @@ import React from "react";
 
 const QualitySection: React.FC = () => {
   return (
-    <section className="pt-[73px] pb-[170px] md:pt-[150px]">
+    <section className="py-[73px] md:pb-[170px] md:pt-[150px]">
       <div className="container mx-auto bg-white px-5 md:px-20 2xl:px-40">
         <div className="flex justify-center">
           <div className="flex flex-col items-center md:flex-row md:space-x-[88px]">
@@ -28,7 +28,6 @@ const QualitySection: React.FC = () => {
                 with you on a project. Let’s work together and make things
                 happen.
               </div>
-
               <Button
                 label="Contact us"
                 size="large"

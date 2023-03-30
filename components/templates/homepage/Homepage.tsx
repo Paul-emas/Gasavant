@@ -109,10 +109,9 @@ const HomepageTemplate: React.FC = () => {
       />
       <ProjectsSlider />
       <QualitySection />
-      {/* 
       <HomepageFaq />
       <StatsSection />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
