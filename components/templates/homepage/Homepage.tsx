@@ -82,18 +82,17 @@ const HomepageTemplate: React.FC = () => {
   const [isFirstTimeUser, setIsFirstimeUser] = useState<boolean>(false);
 
   useEffect(() => {
-    if (!localStorage.getItem("first-time-user")) {
+    if (!localStorage.getItem("first-time-user-33")) {
       setIsFirstimeUser(true);
-      localStorage.setItem("first-time-user", JSON.stringify(true));
+      localStorage.setItem("first-time-user-33", JSON.stringify(true));
     } else {
       setIsFirstimeUser(false);
     }
   }, []);
 
-  if (isFirstTimeUser) return <Loader />;
-
   return (
     <div>
+      {isFirstTimeUser ? <Loader /> : null}
       <Navbar theme="dark" logoTheme="dark" optionTheme="dark" />
       <Header />
       <HomepageLogo />
