@@ -10,7 +10,7 @@ export type PopoverMenuProps = {
   theme: "light" | "dark";
 };
 
-const options = [
+export const options = [
   {
     title: "Engineering Design",
     caption: "Gas storage & distribution infrastructure",

@@ -8,6 +8,7 @@ import ProjectCard from "./project-card/ProjectCard";
 import Slider from "./slider/Slider";
 import Loader from "./loader/Loader";
 import PopoverMenu from "./popover-menu/PopoverMenu";
+import MobileDropdown from "./mobile-dropdown/MobileDropdown";
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   Slider,
   Loader,
   PopoverMenu,
+  MobileDropdown,
 };

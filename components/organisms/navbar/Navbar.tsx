@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Popover, Transition } from "@headlessui/react";
-import { Button, NavTab, PopoverMenu } from "components/atoms";
-import { MenuIcon } from "icons";
+import { Button, MobileDropdown, NavTab, PopoverMenu } from "components/atoms";
+import { MenuIcon, TimesIcon } from "icons";
 
 export interface NavbarProps {
   theme: "light" | "dark" | "transparent";
@@ -45,6 +45,9 @@ const Navbar: React.FC<NavbarProps> = ({
   logoTheme = "light",
   optionTheme = "light",
 }) => {
+  const [openNav, setOpenNav] = useState<boolean>(false);
+  const [openNavDropdown, setOpenNavDowndown] = useState<boolean>(false);
+
   return (
     <nav
       className={`${navbarThemeColors[theme]} flex h-14 w-full items-center md:h-[120px]`}
@@ -73,6 +76,35 @@ const Navbar: React.FC<NavbarProps> = ({
               />
             </Link>
           </div>
+          <div
+            className={`${
+              openNav ? "-translate-x-0" : "-translate-x-full"
+            } transition-easeInOutQuint absolute left-0 bottom-0 top-14 z-50 block w-full bg-white px-6 py-10 duration-200 md:hidden`}
+          >
+            <div className="relative h-full space-y-10">
+              {tabs.map(({ label, link, type }) => (
+                <div key={label}>
+                  {type === "dropdown" ? (
+                    <MobileDropdown
+                      label={label}
+                      open={openNavDropdown}
+                      setOpen={setOpenNavDowndown}
+                    />
+                  ) : (
+                    <Link
+                      href={link}
+                      className="font-switz font-semibold text-neutral-900 active:text-primary-500"
+                    >
+                      {label}
+                    </Link>
+                  )}
+                </div>
+              ))}
+              <div className="absolute bottom-0 w-full">
+                <Button label="Contact us" className="w-full" />
+              </div>
+            </div>
+          </div>
           <div className="hidden items-center md:flex">
             {tabs.map(({ label, link, type }) => (
               <Fragment key={label}>
@@ -90,11 +122,23 @@ const Navbar: React.FC<NavbarProps> = ({
             <Button variant="primary" label="Contact us" />
           </div>
           <div className="block md:hidden">
-            <button type="button">
-              {theme === "light" || theme === "transparent" ? (
-                <MenuIcon theme="dark" />
+            <button type="button" onClick={() => setOpenNav(!openNav)}>
+              {!openNav ? (
+                <>
+                  {theme === "light" || theme === "transparent" ? (
+                    <MenuIcon theme="dark" />
+                  ) : (
+                    <MenuIcon theme="light" />
+                  )}
+                </>
               ) : (
-                <MenuIcon theme="light" />
+                <>
+                  {theme === "light" || theme === "transparent" ? (
+                    <TimesIcon theme="dark" />
+                  ) : (
+                    <TimesIcon theme="light" />
+                  )}
+                </>
               )}
             </button>
           </div>
