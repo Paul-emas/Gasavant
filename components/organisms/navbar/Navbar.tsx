@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Popover, Transition } from "@headlessui/react";
 import { Button, NavTab, PopoverMenu } from "components/atoms";
+import { MenuIcon } from "icons";
 
 export interface NavbarProps {
   theme: "light" | "dark" | "transparent";
@@ -46,10 +47,10 @@ const Navbar: React.FC<NavbarProps> = ({
 }) => {
   return (
     <nav
-      className={`${navbarThemeColors[theme]} flex h-[120px] w-full items-center`}
+      className={`${navbarThemeColors[theme]} flex h-14 w-full items-center md:h-[120px]`}
     >
-      <div className="h-14 w-full">
-        <div className="container mx-auto flex h-14 items-center justify-between px-8 2xl:px-40">
+      <div className="h-12 w-full md:h-14">
+        <div className="container mx-auto flex h-12 items-center justify-between px-5 md:h-14 md:px-8 2xl:px-40">
           <div>
             <Link href="/">
               <Image
@@ -59,10 +60,20 @@ const Navbar: React.FC<NavbarProps> = ({
                 placeholder="blur"
                 blurDataURL="`/assets/images/logo-${theme}.png`"
                 alt="Gasavant logo"
+                className="hidden md:block"
+              />
+              <Image
+                src={`/assets/images/logo-${logoTheme}.png`}
+                width={116}
+                height={30}
+                placeholder="blur"
+                blurDataURL={`/assets/images/logo-${theme}.png`}
+                alt="Gasavant logo"
+                className="block md:hidden"
               />
             </Link>
           </div>
-          <div className="flex items-center">
+          <div className="hidden items-center md:flex">
             {tabs.map(({ label, link, type }) => (
               <Fragment key={label}>
                 {type === "dropdown" ? (
@@ -75,8 +86,17 @@ const Navbar: React.FC<NavbarProps> = ({
               </Fragment>
             ))}
           </div>
-          <div>
+          <div className="hidden md:block">
             <Button variant="primary" label="Contact us" />
+          </div>
+          <div className="block md:hidden">
+            <button type="button">
+              {theme === "light" || theme === "transparent" ? (
+                <MenuIcon theme="dark" />
+              ) : (
+                <MenuIcon theme="light" />
+              )}
+            </button>
           </div>
         </div>
       </div>

@@ -25,19 +25,25 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
 }) => {
   return (
     <section
-      className={`${!inPage ? "bg-neutral-0 pt-[129px] pb-[215px]" : ""}`}
+      className={`${
+        !inPage ? "bg-neutral-0 py-[67px] md:pb-[215px] md:pt-[129px]" : ""
+      }`}
     >
-      <div className={`${!inPage ? "container mx-auto px-8 2xl:px-40" : ""}`}>
+      <div
+        className={`${
+          !inPage ? "container mx-auto px-5 md:px-8 2xl:px-40" : ""
+        }`}
+      >
         {title ? (
-          <div className="mb-[100px]">
+          <div className="mb-14 md:mb-[100px]">
             <SectionHeading {...{ title, pageCaption, maxWidth }} />
           </div>
         ) : null}
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid gap-y-3 md:grid-cols-3 md:gap-6">
           {data.map(({ iconUrl, title, caption }, ind) => (
             <div
               key={`card-sec-${ind}`}
-              className="h-[350px] border border-neutral-40 bg-neutral-0 pt-12"
+              className="h-[280px] border border-neutral-40 bg-neutral-0 pt-10 md:h-[350px] md:pt-12"
             >
               <Image
                 src={iconUrl}
@@ -49,10 +55,10 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
                 className="mx-auto rounded-full"
               />
               <div className="text-center font-switz">
-                <div className="mt-6 text-4.5xl font-semibold text-neutral-900">
+                <div className="mt-4 text-4.5xl font-semibold text-neutral-900 md:mt-6">
                   {title}
                 </div>
-                <div className="mx-auto mt-2 px-8 text-center text-neutral-500">
+                <div className="mx-auto mt-2 px-6 text-center text-3.2xl text-neutral-500 md:px-8 md:text-base">
                   {caption}
                 </div>
               </div>

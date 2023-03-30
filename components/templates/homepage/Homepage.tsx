@@ -90,9 +90,10 @@ const HomepageTemplate: React.FC = () => {
     }
   }, []);
 
+  if (isFirstTimeUser) return <Loader />;
+
   return (
     <div>
-      {isFirstTimeUser ? <Loader /> : null}
       <Navbar theme="dark" logoTheme="dark" optionTheme="dark" />
       <Header />
       <HomepageLogo />
@@ -109,9 +110,10 @@ const HomepageTemplate: React.FC = () => {
       />
       <ProjectsSlider />
       <QualitySection />
+      {/* 
       <HomepageFaq />
       <StatsSection />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

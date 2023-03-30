@@ -6,24 +6,25 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="h-[750px] overflow-hidden bg-neutral-900">
-      <div className="container mx-auto h-full px-8 2xl:px-40">
-        <div className="grid h-full grid-cols-2">
+    <header className="h-[764px] overflow-hidden bg-neutral-900 md:h-[750px]">
+      <div className="container mx-auto h-full px-5 md:px-8 2xl:px-40">
+        <div className="grid h-full md:grid-cols-2">
           <div>
-            <div className="mt-[112px]">
-              <div className="max-w-[592px]">
-                <div className="text-5.5xl font-bold leading-[68px] text-primary-50">
+            <div className="mt-[71px] md:mt-[112px]">
+              <div className="text-center md:max-w-[592px] md:text-left">
+                <div className="text-3.3xl font-bold leading-[37px] text-primary-50 md:text-5.5xl md:leading-[68px]">
                   We build high-quality gas storage facilities
                 </div>
-                <div className="mt-6 max-w-[560px] text-4.5xl text-neutral-60">
+                <div className="mt-6 font-switz text-neutral-60 md:max-w-[560px] md:text-4.5xl">
                   Engineering gas storage infrastructure that surpasses the
                   standard of the evolving power industry.
                 </div>
               </div>
-              <div className="mt-14 flex items-center gap-x-2">
+              <div className="mt-14 items-center space-y-2 md:flex md:gap-x-2 md:space-y-0">
                 <div>
                   <Link href="/services">
                     <Button
+                      className="w-full md:w-auto"
                       label="Our services"
                       variant="dark"
                       size="large-with-icon"
@@ -37,6 +38,7 @@ const Header: React.FC = () => {
                 <div>
                   <Link href="/projects">
                     <Button
+                      className="w-full md:w-auto"
                       label="View projects"
                       variant="darker"
                       size="large-with-icon"
@@ -48,10 +50,12 @@ const Header: React.FC = () => {
                 </div>
               </div>
             </div>
-            <AvatarGroup />
+            <div className="hidden md:block">
+              <AvatarGroup />
+            </div>
           </div>
           <div className="relative">
-            <div className="absolute bottom-[60px] right-0 scale-[1.25] 2xl:bottom-[100px] 2xl:scale-[1.4] 3xl:bottom-[40px] 3xl:scale-[1.13]">
+            <div className="absolute bottom-0 right-0 md:bottom-[60px] md:scale-[1.25] 2xl:bottom-[100px] 2xl:scale-[1.4] 3xl:bottom-[40px] 3xl:scale-[1.13]">
               <Image
                 src="/assets/images/tank.png"
                 width={795}

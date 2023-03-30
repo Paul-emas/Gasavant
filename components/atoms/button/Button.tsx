@@ -78,7 +78,7 @@ const Button: React.FC<ButtonProps> = (
 
   return (
     <button
-      className={`${sizes[size]} ${variants[variant]} ${className} outline-none border-none font-switz font-semibold flex items-center gap-x-2`}
+      className={`${sizes[size]} ${variants[variant]} ${className} flex items-center justify-center gap-x-2 border-none font-switz font-semibold outline-none`}
       {...props}
     >
       {isWithIcon && iconPosition === "left" ? (
