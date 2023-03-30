@@ -22,10 +22,10 @@ export const stats = [
 
 const StatsSection: React.FC = () => {
   return (
-    <section className="pb-[90px]">
+    <section className="pb-10 md:pb-[90px]">
       <div className="h-[205px] bg-primary-500 md:h-[495px]"></div>
       <div className="px-3">
-        <div className="container mx-auto -mt-36 h-[694px] bg-white px-6 md:-mt-96 md:px-20 2xl:px-40">
+        <div className="container mx-auto -my-36 h-[694px] bg-white px-6 md:-mt-96 md:px-20 2xl:px-40">
           <div className="pt-[33px] md:pt-[97px]">
             <SectionHeading
               {...{
@@ -35,7 +35,7 @@ const StatsSection: React.FC = () => {
               }}
             />
             <div className="mt-[34px] md:mt-[65px] 3xl:px-16">
-              <div className="mb-[70px] flex  flex-wrap items-center justify-center border-neutral-40 md:h-[275px] md:border">
+              <div className="flex flex-wrap  items-center justify-center border-neutral-40 md:mb-[70px] md:h-[275px] md:border">
                 {stats.map(({ title, caption }) => (
                   <div
                     key={title}
