@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Popover, Transition } from "@headlessui/react";
 import { Button, MobileDropdown, NavTab, PopoverMenu } from "components/atoms";
 import { MenuIcon, TimesIcon } from "icons";
 
@@ -78,8 +77,10 @@ const Navbar: React.FC<NavbarProps> = ({
           </div>
           <div
             className={`${
-              openNav ? "-translate-x-0" : "-translate-x-full"
-            } transition-easeInOutQuint absolute left-0 bottom-0 top-14 z-50 block w-full bg-white px-6 py-10 duration-200 md:hidden`}
+              openNav
+                ? "transition-easeInOutQuint -translate-x-0"
+                : "-translate-x-full"
+            } absolute left-0 bottom-0 top-14 z-50 block w-full bg-white px-6 py-10 duration-200 md:hidden`}
           >
             <div className="relative h-full space-y-10">
               {tabs.map(({ label, link, type }) => (
