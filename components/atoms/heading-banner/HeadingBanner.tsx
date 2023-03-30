@@ -16,7 +16,7 @@ const HeadingBanner: React.FC<HeadingBannerProps> = ({
       <div className="container mx-auto px-5 md:px-20 2xl:px-40">
         <div
           className={`${
-            maxWidth ? `md:${maxWidth}` : "md:max-w-[494px]"
+            maxWidth ? `${maxWidth}` : "md:max-w-[494px]"
           }  mx-auto text-center`}
         >
           <div className="text-3.3xl font-bold leading-[37px] text-neutral-0 md:text-5.5xl md:leading-[68px]">

@@ -15,7 +15,7 @@ const ServicesTemplate: React.FC = () => {
           title: "Our services — with over 35 years of experience",
           caption:
             "With strong focus on safety and quality assurance, ensuring all projects meet industry standards and regulations.",
-          maxWidth: "max-w-[676px]",
+          maxWidth: "md:max-w-[676px]",
         }}
       />
       <section className="pb-10 md:pb-56">
@@ -120,7 +120,7 @@ const ServicesTemplate: React.FC = () => {
                 {partnersData.map(({ imageUrl, width, height, alt }) => (
                   <div
                     key={imageUrl}
-                    className="mb-[60px] flex w-1/3 justify-center gap-x-6 md:w-1/4 md:gap-x-0"
+                    className="mb-10 flex w-1/2 justify-center md:mb-[60px] md:w-1/4"
                   >
                     <Image
                       src={imageUrl}
