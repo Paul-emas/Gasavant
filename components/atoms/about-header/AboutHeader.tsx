@@ -6,23 +6,43 @@ import Button from "../button/Button";
 
 const AboutHeader = () => {
   return (
-    <div className="h-[750px]">
-      <div className="container mx-auto px-20 2xl:px-40 ">
-        <div className="grid h-full grid-cols-2">
+    <div className="md:h-[750px]">
+      <div className="container relative mx-auto px-5 md:px-20 2xl:px-40">
+        <div className="relative h-full md:grid md:grid-cols-2">
+          <div className="relative top-2 block md:hidden">
+            <div className="shade absolute top-36 left-0 z-10 h-[239px] w-full"></div>
+            <div className="float-shadow absolute top-20 z-10 flex h-[76px] w-[125px] items-center justify-center bg-neutral-0">
+              <div className="text-center">
+                <div className="text-4.5xl font-bold text-neutral-900">
+                  300,000
+                </div>
+                <div className="font-switz text-[9px] font-bold text-neutral-500">
+                  Customers
+                </div>
+              </div>
+            </div>
+            <Image
+              src="/assets/images/workman.png"
+              width={242}
+              height={326}
+              alt="Engineer at work"
+              className="mx-auto"
+            />
+          </div>
           <div>
-            <div className="mt-[112px]">
-              <div className="max-w-[578px]">
-                <div className="max-w-[578px]">
-                  <div className="text-5.5xl font-bold leading-[68px] text-neutral-900">
+            <div className="md:mt-[112px]">
+              <div className="md:max-w-[578px]">
+                <div className="relative z-20 text-center md:max-w-[578px] md:text-left">
+                  <div className="text-3.3xl font-bold leading-[37px] text-neutral-900 md:text-5.5xl md:leading-[68px]">
                     We are taking engineering to the next level
                   </div>
-                  <div className="mt-6 font-switz text-4.5xl text-neutral-500">
+                  <div className="mt-6 font-switz text-base text-neutral-500 md:text-4.5xl">
                     At Gasavant, we manage and enforce the highest quality and
                     safety standards with all our partners and service
                     providers.
                   </div>
                 </div>
-                <div className="mt-14 flex items-center gap-x-2">
+                <div className="mt-8 items-center gap-x-2 md:mt-14 md:flex">
                   <div>
                     <Link href="/services">
                       <Button
@@ -33,6 +53,7 @@ const AboutHeader = () => {
                         iconPosition="right"
                         iconType="arrow-right-up"
                         iconColor="light"
+                        className="w-full md:w-auto"
                       />
                     </Link>
                   </div>
@@ -46,15 +67,18 @@ const AboutHeader = () => {
                         iconPosition="right"
                         iconType="arrow-right"
                         iconColor="secondary"
+                        className="mt-2 w-full md:mt-0 md:w-auto"
                       />
                     </Link>
                   </div>
                 </div>
-                <AvatarGroup theme="dark" />
+                <div className="hidden md:block">
+                  <AvatarGroup theme="dark" />
+                </div>
               </div>
             </div>
           </div>
-          <div className="relative -top-9">
+          <div className="relative -top-9 hidden md:block">
             <div className="float-shadow absolute bottom-[107px] -left-20 z-10 flex h-[130px] w-[222px] items-center justify-center bg-neutral-0">
               <div className="text-center">
                 <div className="font-switz text-neutral-500">

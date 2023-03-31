@@ -19,22 +19,34 @@ const AboutContentCard: React.FC<AboutContentCardProps> = ({
   return (
     <div
       className={`${
-        align === "right" ? "flex-row-reverse" : ""
-      } flex items-center justify-center gap-x-[118px] mb-[220px] last:mb-0`}
+        align === "right"
+          ? "flex-col-reverse md:flex-row-reverse"
+          : "flex-col-reverse"
+      } mb-12 flex flex-wrap items-center justify-center gap-x-[118px] last:mb-0 md:mb-[220px] md:flex-row`}
     >
-      <div className="max-w-[456px]">
-        <div className="text-neurtal-900 text-[33px] font-bold leading-10">
+      <div className="max-w-[456px] text-center md:text-left">
+        <div className="text-neurtal-900 mt-12 text-2xl font-bold leading-[30px] md:mt-0 md:text-[33px] md:leading-10">
           {title}
         </div>
-        <div className="mt-6 text-neutral-500 font-switz text-4.5xl">
+        <div className="mt-6 font-switz text-base text-neutral-500 md:text-4.5xl">
           {caption}
         </div>
       </div>
-      <div>
+      <div className="hidden md:block">
         <Image
           src={imageUrl}
           width={612}
           height={437}
+          placeholder="blur"
+          blurDataURL={imageUrl}
+          alt={alt}
+        />
+      </div>
+      <div className="block md:hidden">
+        <Image
+          src={imageUrl}
+          width={335}
+          height={238}
           placeholder="blur"
           blurDataURL={imageUrl}
           alt={alt}

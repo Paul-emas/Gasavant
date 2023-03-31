@@ -49,14 +49,29 @@ export const partnersData = [
 
 const WhyUs: React.FC = () => {
   return (
-    <section className="pt-[193px] pb-[213px]">
-      <div className="container mx-auto bg-white px-20 2xl:px-40">
-        <div className="grid grid-cols-2">
-          <div className="max-w-[451px]">
-            <div className="font-switz font-medium uppercase tracking-[0.25em] text-primary-500">
+    <section className="py-14 md:pb-[213px] md:pt-[193px]">
+      <div className="container mx-auto bg-white px-5 md:px-20 2xl:px-40">
+        <div className="grid md:grid-cols-2">
+          <div className="flex flex-wrap items-center justify-center md:hidden">
+            {partnersData.map(({ imageUrl, width, height, alt }) => (
+              <div key={imageUrl} className="mb-[60px] w-1/2 md:w-1/3">
+                <Image
+                  src={imageUrl}
+                  width={width}
+                  height={height}
+                  alt={alt}
+                  placeholder="blur"
+                  blurDataURL={imageUrl}
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="text-center md:max-w-[451px] md:text-left">
+            <div className="font-switz text-3.2xl font-medium uppercase tracking-[0.25em] text-primary-500 md:text-base">
               Why choose us
             </div>
-            <div className="mt-4 text-5xl font-bold leading-[58px] text-neutral-900">
+            <div className="mt-4 text-3.3xl font-bold leading-[37px] text-neutral-900 md:text-5xl md:leading-[58px]">
               Years of industry-leading experience
             </div>
             <div className="mt-7 font-switz text-base text-neutral-900">
@@ -70,13 +85,13 @@ const WhyUs: React.FC = () => {
               variant="secondary"
               iconColor="secondary"
               size="large-with-icon"
-              className="mt-14"
+              className="mt-14 w-full md:w-auto"
             />
           </div>
-          <div className="mt-10">
-            <div className="flex w-[595.13px] flex-wrap items-center justify-between">
+          <div className="mt-10 hidden md:block">
+            <div className="flex flex-wrap items-center justify-between md:w-[595.13px]">
               {partnersData.map(({ imageUrl, width, height, alt }) => (
-                <div key={imageUrl} className="mb-[60px] w-1/3">
+                <div key={imageUrl} className="mb-[60px] w-1/2 md:w-1/3">
                   <Image
                     src={imageUrl}
                     width={width}

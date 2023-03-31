@@ -20,8 +20,8 @@ const content2 = {
 
 const AboutInfo: React.FC = () => {
   return (
-    <section className="mt-[260px] mb-[132px] bg-white">
-      <div className="container mx-auto px-20 2xl:px-40">
+    <section className="mt-52 mb-10 bg-white md:mb-[132px] md:mt-[260px]">
+      <div className="container mx-auto px-5 md:px-20 2xl:px-40">
         <SectionHeading
           {...{
             title: "Bridging the gas infrastructure gap in sub- Saharan Africa",
@@ -30,7 +30,7 @@ const AboutInfo: React.FC = () => {
             maxWidth: "max-w-[750px]",
           }}
         />
-        <div className="mt-[135px]">
+        <div className="mt-[82px] md:mt-[135px]">
           <AboutContentCard {...content1} align="left" />
           <AboutContentCard {...content2} align="right" />
         </div>

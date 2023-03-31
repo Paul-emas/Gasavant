@@ -168,3 +168,11 @@ a {
 .transition-easeInOutQuint {
   transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
 }
+
+.shade {
+  background: linear-gradient(
+    180deg,
+    rgba(230, 240, 252, 0) 19.87%,
+    #e6f0fc 75.12%
+  );
+}
