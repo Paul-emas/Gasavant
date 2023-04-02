@@ -1,33 +1,6 @@
 import React, { useState } from "react";
 import { SectionHeading } from "components/atoms";
-
-const questions = [
-  {
-    id: 11,
-    ques: "What is LPG?",
-    ans: "",
-  },
-  {
-    id: 12,
-    ques: "What is the difference between butane and propane?",
-    ans: "You'll make a better win in digital if you know how to work around their creative contents and how to amplify them to the markets that need it most.",
-  },
-  {
-    id: 13,
-    ques: "Does Gasavant operate and maintain the LPG plants they’ve built?",
-    ans: "",
-  },
-  {
-    id: 14,
-    ques: "What is the Nigerian standard for LPG mix of propane and butane?",
-    ans: "",
-  },
-  {
-    id: 15,
-    ques: "What is the minimum land size requirement?",
-    ans: "",
-  },
-];
+import { questions } from "../faq-questions/FaqQuestions";
 
 const HomepageFaq = () => {
   const [activeQues, setActiveQues] = useState<any>(questions[0]);
@@ -75,7 +48,7 @@ const HomepageFaq = () => {
                       : "h-0 overflow-hidden duration-200"
                   } max-w-[578px] font-switz text-3.2xl text-neutral-600 transition-all md:text-4.5xl`}
                 >
-                  {item.ans}
+                  {item.paragraphs}
                 </div>
               </div>
             ))}

@@ -1,38 +1,44 @@
 import React from "react";
 import { FloatSectionWrapper } from "components/molecules";
 
-const questions = [
+export const questions = [
   {
+    id: 11,
     ques: "What is LPG?",
     paragraphs: [
       "LPG, otherwise known as Liquified Petroleum Gas is the liquefied form of petroleum gases released during the extraction of crude oil and natural gas. It  is composed of a highly flammable mixture of hydrocarbon gases, specifically propane, butylene, propylene,  isobutane and n- butane. LPG is commonly used in residential heating, cooking, fuel in cars and industrial power.",
     ],
   },
   {
+    id: 22,
     ques: "What is the difference between butane and propane?",
     paragraphs: [
       "The key difference between the two is their boiling point. Propane is capable of handling lower temperatures, making it suitable for outdoor storage; while Butane is better stored indoors.",
     ],
   },
   {
+    id: 33,
     ques: "Does Gasavant operate and maintain the LPG plants they’ve built?",
     paragraphs: [
       "Gasavant provides maintenance of our constructed LPG plants as an optional service according to client needs.",
     ],
   },
   {
+    id: 44,
     ques: "What is the Nigerian standard for LPG mix of propane and butane?",
     paragraphs: [
       "Though the NMDPRA has not exclusively published strict regulations on the LPG  mix, the industry standard approves of a 70 parts propane  to 30 parts butane mix. ",
     ],
   },
   {
+    id: 55,
     ques: "What is the minimum land size requirement?",
     paragraphs: [
       "The minimum land size requirement is 1000 square meters (sqm)",
     ],
   },
   {
+    id: 66,
     ques: "Would  Gasavant provide LPG supply after construction?",
     paragraphs: [
       "We are able to provide LPG supply after construction if the owner of the plant deems it necessary.",

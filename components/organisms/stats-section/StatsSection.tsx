@@ -22,7 +22,7 @@ export const stats = [
 
 const StatsSection: React.FC = () => {
   return (
-    <section className="pb-10 md:pb-[90px]">
+    <section className="pb-10 md:pb-[200px]">
       <div className="h-[205px] bg-primary-500 md:h-[495px]"></div>
       <div className="px-3">
         <div className="container mx-auto -my-36 h-[694px] bg-white px-6 md:-mt-96 md:px-20 2xl:px-40">
