@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button, MobileDropdown, NavTab, PopoverMenu } from "components/atoms";
 import { MenuIcon, TimesIcon } from "icons";
+import { useRouter } from "next/router";
 
 export interface NavbarProps {
   theme: "light" | "dark" | "transparent";
@@ -44,8 +45,10 @@ const Navbar: React.FC<NavbarProps> = ({
   logoTheme = "light",
   optionTheme = "light",
 }) => {
+  const router = useRouter();
   const [openNav, setOpenNav] = useState<boolean>(false);
   const [openNavDropdown, setOpenNavDowndown] = useState<boolean>(false);
+  const isProjectPage = router.asPath === "/projects";
 
   return (
     <nav
@@ -126,7 +129,8 @@ const Navbar: React.FC<NavbarProps> = ({
             <button type="button" onClick={() => setOpenNav(!openNav)}>
               {!openNav ? (
                 <>
-                  {theme === "light" || theme === "transparent" ? (
+                  {theme === "light" ||
+                  (theme === "transparent" && !isProjectPage) ? (
                     <MenuIcon theme="dark" />
                   ) : (
                     <MenuIcon theme="light" />
@@ -134,7 +138,8 @@ const Navbar: React.FC<NavbarProps> = ({
                 </>
               ) : (
                 <>
-                  {theme === "light" || theme === "transparent" ? (
+                  {theme === "light" ||
+                  (theme === "transparent" && !isProjectPage) ? (
                     <TimesIcon theme="dark" />
                   ) : (
                     <TimesIcon theme="light" />

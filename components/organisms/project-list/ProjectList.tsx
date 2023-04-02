@@ -43,10 +43,10 @@ const projectsData = [
 const ProjectList: React.FC = () => {
   return (
     <section>
-      <div className="container mx-auto bg-white px-20 2xl:px-40">
+      <div className="container mx-auto bg-white px-5 md:px-20 2xl:px-40">
         <SectionHeading title="Here’s a list of projects we worked on" />
-        <div className="mt-[97px]">
-          <div className="grid grid-cols-3 gap-y-8 space-x-4">
+        <div className="mt-12 md:mt-[97px]">
+          <div className="grid gap-y-4 md:grid-cols-3 md:gap-y-8 md:space-x-4">
             {projectsData.map((project) => (
               <div key={project.title}>
                 <ProjectCard {...project} />

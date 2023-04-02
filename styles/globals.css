@@ -147,16 +147,6 @@ a {
   }
 }
 
-.project-banner {
-  background: linear-gradient(
-      90deg,
-      rgba(0, 15, 32, 0.97) 20.56%,
-      rgba(0, 15, 32, 0.43) 97.47%
-    ),
-    url("../public/assets/images/projects/banner.jpg");
-  background-size: cover;
-}
-
 .slider-overlay {
   background: linear-gradient(
     180deg,
@@ -175,4 +165,31 @@ a {
     rgba(230, 240, 252, 0) 19.87%,
     #e6f0fc 75.12%
   );
+}
+
+.project-banner {
+  background: linear-gradient(
+      359.79deg,
+      rgba(0, 15, 32, 0.97) 19.16%,
+      rgba(0, 15, 32, 0.43) 50.32%,
+      rgba(0, 15, 32, 0.43) 72.64%,
+      rgba(0, 15, 32, 0.88) 90.39%
+    ),
+    url("../public/assets/images/projects/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@screen md {
+  .project-banner {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 15, 32, 0.97) 20.56%,
+        rgba(0, 15, 32, 0.43) 97.47%
+      ),
+      url("../public/assets/images/projects/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
