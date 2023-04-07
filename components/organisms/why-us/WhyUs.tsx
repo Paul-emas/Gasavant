@@ -45,6 +45,18 @@ export const partnersData = [
     height: 51,
     alt: "AA Rano logo",
   },
+  {
+    imageUrl: "/assets/images/logos/peso.png",
+    width: 90,
+    height: 39,
+    alt: "Peso logo",
+  },
+  {
+    imageUrl: "/assets/images/logos/hydrocarbon.png",
+    width: 178,
+    height: 46,
+    alt: "Kwake Hydrocarbon logo",
+  },
 ];
 
 const WhyUs: React.FC = () => {
@@ -91,7 +103,7 @@ const WhyUs: React.FC = () => {
           <div className="mt-10 hidden md:block">
             <div className="flex flex-wrap items-center justify-between md:w-[595.13px]">
               {partnersData.map(({ imageUrl, width, height, alt }) => (
-                <div key={imageUrl} className="mb-[60px] w-1/2 md:w-1/3">
+                <div key={imageUrl} className="mb-[60px] w-1/2 md:w-1/5">
                   <Image
                     src={imageUrl}
                     width={width}

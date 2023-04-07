@@ -34,7 +34,7 @@ const AboutHeader = () => {
               <div className="md:max-w-[578px]">
                 <div className="relative z-20 text-center md:max-w-[578px] md:text-left">
                   <div className="text-3.3xl font-bold leading-[37px] text-neutral-900 md:text-5.5xl md:leading-[68px]">
-                    We are taking engineering to the next level
+                    Bridging the gas infrastructure gap in Sub Saharan Africa
                   </div>
                   <div className="mt-6 font-switz text-base text-neutral-500 md:text-4.5xl">
                     At Gasavant, we manage and enforce the highest quality and
@@ -58,9 +58,9 @@ const AboutHeader = () => {
                     </Link>
                   </div>
                   <div>
-                    <Link href="/projects">
+                    <Link href="/team">
                       <Button
-                        label="View projects"
+                        label="Our team"
                         variant="secondary"
                         size="large-with-icon"
                         isWithIcon

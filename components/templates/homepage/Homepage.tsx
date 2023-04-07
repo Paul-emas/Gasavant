@@ -14,7 +14,7 @@ import {
 import { Loader } from "components/atoms";
 
 const pageData = {
-  title: "We believe in delivering the best quality possible",
+  title: "We are utilizing gas as a transition fuel for industrilization",
   data: [
     {
       title: "Our Vision",
@@ -96,15 +96,17 @@ const HomepageTemplate: React.FC = () => {
       <Navbar theme="dark" logoTheme="dark" optionTheme="dark" />
       <Header />
       <HomepageLogo />
-      <ServiceSection {...pageData} />
+      <ServiceSection {...{ ...pageData, maxWidth: "max-w-[795px]" }} />
       <EnergySection />
       <ServiceSection
         {...{
-          title: "We provide a comprehensive list of  gas related services.",
+          headingLayout: "flex",
+          title: "We provide EPCI and Gas supply services.",
           pageCaption:
             "Our team of experienced professionals is dedicated to providing the highest level of service and safety for our clients. We adhere to the strictest regulatory standards and employ the latest technologies and best practices to ensure the safe and efficient storage of your gas products.",
-          maxWidth: "max-w-[700px]",
+          maxWidth: "max-w-full",
           ...pageData2,
+          headingAlign: "left",
         }}
       />
       <ProjectsSlider />

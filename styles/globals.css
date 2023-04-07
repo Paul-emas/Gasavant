@@ -178,18 +178,19 @@ a {
     url("../public/assets/images/projects/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center 70%;
 }
 
 @screen md {
   .project-banner {
     background: linear-gradient(
-        90deg,
-        rgba(0, 15, 32, 0.97) 20.56%,
-        rgba(0, 15, 32, 0.43) 97.47%
+        0deg,
+        rgba(0, 15, 32, 0.97) 20.01%,
+        rgba(0, 15, 32, 0.27) 86.75%
       ),
       url("../public/assets/images/projects/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 20% center;
   }
 }
