@@ -22,7 +22,7 @@ const HomepageFaq = () => {
           <SectionHeading
             {...{
               title: "Frequently asked questions",
-              pageCaption: "We’ve got answers to your questions",
+              pageCaption: "We’ve got answers to your questions ",
               align: "left",
               maxWidth: "max-w-[440px]",
             }}
