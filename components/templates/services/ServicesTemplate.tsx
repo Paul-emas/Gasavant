@@ -21,11 +21,11 @@ const ServicesTemplate: React.FC = () => {
       <section className="pb-10 md:pb-56">
         <FloatSectionWrapper>
           <div>
-            <div className="justify-between text-center md:flex md:text-left">
-              <div className="text-2xl font-bold leading-[30px] text-neutral-900 md:max-w-[416px] md:text-5xl md:leading-[58px]">
+            <div className="text-center md:flex md:gap-x-[88px] md:text-left 3xl:gap-x-[262px]">
+              <div className="text-2xl font-bold leading-[30px] text-neutral-900 md:max-w-[490px] md:text-5xl md:leading-[58px]">
                 We provide efficient EPC and Gas supply.
               </div>
-              <div className="mt-6 font-switz text-3.2xl text-neutral-800 md:mt-0 md:max-w-[529px] md:text-4.5xl">
+              <div className="mt-6 font-switz text-3.2xl text-neutral-800 md:mt-0 md:max-w-[504px] md:text-4.5xl">
                 Our team of experienced professionals is dedicated to providing
                 the highest level of service and safety for our clients. We
                 adhere to the strictest regulatory standards, follow best

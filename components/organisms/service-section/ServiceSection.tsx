@@ -14,6 +14,8 @@ export interface ServiceSectionProps {
   data: CardDetailInterface[];
   inPage?: boolean;
   maxWidth?: string;
+  headingLayout?: "flex" | "normal";
+  headingAlign?: "center" | "left" | "right";
 }
 
 const ServiceSection: React.FC<ServiceSectionProps> = ({
@@ -22,6 +24,8 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
   data,
   inPage,
   maxWidth,
+  headingLayout,
+  headingAlign,
 }) => {
   return (
     <section
@@ -36,10 +40,22 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
       >
         {title ? (
           <div className="mb-14 md:mb-[100px]">
-            <SectionHeading {...{ title, pageCaption, maxWidth }} />
+            <SectionHeading
+              {...{
+                title,
+                pageCaption,
+                maxWidth,
+                layout: headingLayout,
+                align: headingAlign,
+              }}
+            />
           </div>
         ) : null}
-        <div className="grid gap-y-3 md:grid-cols-3 md:gap-6">
+        <div
+          className={`grid ${
+            !inPage ? "md:grid-cols-3" : "md:grid-cols-2"
+          } gap-y-3 md:gap-6`}
+        >
           {data.map(({ iconUrl, title, caption }, ind) => (
             <div
               key={`card-sec-${ind}`}

@@ -28,8 +28,8 @@ const tabs = [
     type: "dropdown",
   },
   {
-    label: "Our project",
-    link: "/projects",
+    label: "Our team",
+    link: "/team",
     type: "single",
   },
 ];

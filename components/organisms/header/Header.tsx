@@ -1,8 +1,8 @@
+import React from "react";
 import { Button } from "components/atoms";
 import AvatarGroup from "components/atoms/avatar-group/AvatarGroup";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Header: React.FC = () => {
   return (
@@ -16,8 +16,8 @@ const Header: React.FC = () => {
                   We build high-quality gas storage facilities
                 </div>
                 <div className="mt-6 font-switz text-neutral-60 md:max-w-[560px] md:text-4.5xl">
-                  Engineering gas storage infrastructure that surpasses the
-                  standard of the evolving power industry.
+                  Provinding Engineering gas storage infrastructure that meets
+                  all your gas infrastructure needs.
                 </div>
               </div>
               <div className="mt-14 items-center space-y-2 md:flex md:gap-x-2 md:space-y-0">
@@ -36,10 +36,10 @@ const Header: React.FC = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link href="/projects">
+                  <Link href="/team">
                     <Button
                       className="w-full md:w-auto"
-                      label="View projects"
+                      label="Our team"
                       variant="darker"
                       size="large-with-icon"
                       isWithIcon

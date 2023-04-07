@@ -8,7 +8,7 @@ const QualitySection: React.FC = () => {
       <div className="container mx-auto bg-white px-5 md:px-20 2xl:px-40">
         <div className="flex justify-center">
           <div className="flex flex-col items-center md:flex-row md:space-x-[88px]">
-            <div className="relative h-[359.84px] w-[353.44px] md:h-[643px] md:w-[614px]">
+            <div className="relative h-[359.84px] w-[353.44px] -rotate-90 md:h-[649.25px] md:w-[622px]">
               <Image
                 src="/assets/images/quality-banner.jpg"
                 fill
