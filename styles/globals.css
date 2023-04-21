@@ -167,6 +167,10 @@ a {
   );
 }
 
+.input-form {
+  @apply h-14 w-full border border-neutral-50 py-[18px] px-5 font-switz text-sm shadow-none outline-none;
+}
+
 .project-banner {
   background: linear-gradient(
       359.79deg,
@@ -181,6 +185,13 @@ a {
   background-position: center 70%;
 }
 
+.contact-banner {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../public/assets/images/contact-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @screen md {
   .project-banner {
     background: linear-gradient(
@@ -193,4 +204,54 @@ a {
     background-size: cover;
     background-position: 20% center;
   }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000914;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000914;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }

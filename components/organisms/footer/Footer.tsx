@@ -11,20 +11,12 @@ const footerData = [
         slug: "/about",
       },
       {
-        text: "Value proposition",
-        slug: "/about",
-      },
-      {
         text: "Our mission",
         slug: "/about",
       },
       {
         text: "Our values",
         slug: "/about",
-      },
-      {
-        text: "Our projects",
-        slug: "/project",
       },
       {
         text: "Our team",
@@ -94,7 +86,7 @@ const footerData = [
       {
         text: "Instagram",
         url: "/about",
-        iconUrl: "/assets/images/socials/facebook.png",
+        iconUrl: "/assets/images/socials/instagram.png",
       },
       {
         text: "Twitter",

@@ -16,8 +16,8 @@ const Header: React.FC = () => {
                   We build high-quality gas storage facilities
                 </div>
                 <div className="mt-6 font-switz text-neutral-60 md:max-w-[560px] md:text-4.5xl">
-                  Provinding Engineering gas storage infrastructure that meets
-                  all your gas infrastructure needs.
+                  Providing engineering and gas storage infrastructure that
+                  meets all your gas infrastructure needs.
                 </div>
               </div>
               <div className="mt-14 items-center space-y-2 md:flex md:gap-x-2 md:space-y-0">

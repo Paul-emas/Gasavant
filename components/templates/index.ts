@@ -5,6 +5,7 @@ import AboutTemplate from "./about/AboutTemplate";
 import ServicesTemplate from "./services/ServicesTemplate";
 import ProjectsTemplate from "./projects/ProjectsTemplate";
 import ProjectsDetailsTemplate from "./projects-details/ProjectsDetailsTemplate";
+import ContactTemplate from "./contact/ContactTemplate";
 
 export {
   HomepageTemplate,
@@ -12,6 +13,7 @@ export {
   TeamTemplate,
   AboutTemplate,
   ServicesTemplate,
+  ContactTemplate,
   ProjectsTemplate,
   ProjectsDetailsTemplate,
 };

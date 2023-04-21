@@ -22,8 +22,8 @@ const ServicesTemplate: React.FC = () => {
         <FloatSectionWrapper>
           <div>
             <div className="text-center md:flex md:gap-x-[88px] md:text-left 3xl:gap-x-[262px]">
-              <div className="text-2xl font-bold leading-[30px] text-neutral-900 md:max-w-[490px] md:text-5xl md:leading-[58px]">
-                We provide efficient EPC and Gas supply.
+              <div className="text-2xl font-bold leading-[30px] text-neutral-900 md:max-w-[490px] md:text-[40px] md:leading-[58px]">
+                We provide EPCI and Gas supply services.
               </div>
               <div className="mt-6 font-switz text-3.2xl text-neutral-800 md:mt-0 md:max-w-[504px] md:text-4.5xl">
                 Our team of experienced professionals is dedicated to providing
@@ -116,12 +116,9 @@ const ServicesTemplate: React.FC = () => {
                     "Our clients include major oil & gas companies, as well as smaller regional gas providers, we have a proven track record of delivering projects on time and within budget.",
                 }}
               />
-              <div className="mx-auto mt-[77px] flex max-w-[820.8px] flex-wrap items-center justify-center">
+              <div className="mx-auto mt-[77px] flex max-w-[820.8px] flex-wrap items-center justify-center gap-x-14 md:gap-x-0">
                 {partnersData.map(({ imageUrl, width, height, alt }) => (
-                  <div
-                    key={imageUrl}
-                    className="mb-10 flex w-1/2 justify-center md:mb-[60px] md:w-1/4"
-                  >
+                  <div key={imageUrl} className="mb-10 md:mb-[60px] md:w-1/4">
                     <Image
                       src={imageUrl}
                       width={width}

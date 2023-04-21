@@ -18,10 +18,12 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   return (
     <div
       className={`text-center ${
-        layout === "flex" ? "w-full md:flex md:gap-x-[262px]" : ""
+        layout === "flex"
+          ? "w-full md:flex md:gap-x-[100px] 3xl:gap-x-[262px]"
+          : ""
       } md:text-${align} ${
         align === "center" ? "mx-auto" : "mx-auto md:mx-0"
-      } ${maxWidth ? maxWidth : "max-w-[627px]"}`}
+      } ${maxWidth ? maxWidth : "max-w-[627px]"} items-center`}
     >
       <div
         className={`${
@@ -33,8 +35,8 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
       {pageCaption ? (
         <div
           className={`${
-            layout === "flex" ? "md:max-w-[610px]" : ""
-          } mt-6 font-switz text-base text-neutral-500 md:text-4.5xl`}
+            layout === "flex" ? " md:max-w-[610px]" : ""
+          } mt-6 font-switz text-base text-neutral-500 md:text-4.5xl md:leading-7`}
         >
           {pageCaption}
         </div>

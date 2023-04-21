@@ -6,7 +6,7 @@ const EnergySection: React.FC = () => {
     <section className="bg-primary-500 py-[53px] md:pb-[141px] md:pt-[133px]">
       <div className="container mx-auto px-5 md:px-8 2xl:px-40">
         <div className="grid text-center md:grid-cols-2 md:text-left">
-          <div className="max-w-[478px] text-3.3xl font-bold leading-[37px] text-neutral-0 md:text-5xl md:leading-[58px]">
+          <div className="max-w-[502px] text-3.3xl font-bold leading-[37px] text-neutral-0 md:text-5xl md:leading-[58px]">
             Everything you need to make a difference
           </div>
           <div className="mt-8 max-w-[634px] font-switz text-base leading-7 text-neutral-30 md:mt-0 md:text-4.5xl">
