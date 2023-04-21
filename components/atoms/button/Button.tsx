@@ -12,6 +12,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   iconType?: "arrow-right-up" | "arrow-right";
   iconPosition?: "left" | "right";
   iconColor?: "light" | "dark" | "secondary";
+  onClick?: () => void;
 }
 
 export interface ButtonSizesInterface {
@@ -45,6 +46,7 @@ const Button: React.FC<ButtonProps> = (
     iconPosition = "left",
     iconType = "arrow-right",
     iconColor = "light",
+    onClick,
   },
   ...props
 ) => {
@@ -78,6 +80,7 @@ const Button: React.FC<ButtonProps> = (
 
   return (
     <button
+      onClick={onClick}
       className={`${sizes[size]} ${variants[variant]} ${className} flex items-center justify-center gap-x-2 border-none font-switz font-semibold outline-none`}
       {...props}
     >

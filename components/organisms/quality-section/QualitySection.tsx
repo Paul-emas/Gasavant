@@ -1,5 +1,6 @@
 import { Button } from "components/atoms";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const QualitySection: React.FC = () => {
@@ -28,11 +29,13 @@ const QualitySection: React.FC = () => {
                 with you on a project. Let’s work together and make things
                 happen.
               </div>
-              <Button
-                label="Contact us"
-                size="large"
-                className="mt-14 w-full md:w-auto"
-              />
+              <Link href="/contact">
+                <Button
+                  label="Contact us"
+                  size="large"
+                  className="mt-14 w-full md:w-[227px]"
+                />
+              </Link>
             </div>
           </div>
         </div>

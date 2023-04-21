@@ -11,13 +11,25 @@ const AboutHeader = () => {
         <div className="relative h-full md:grid md:grid-cols-2">
           <div className="relative top-2 block md:hidden">
             <div className="shade absolute top-36 left-0 z-10 h-[239px] w-full"></div>
-            <div className="float-shadow absolute top-20 z-10 flex h-[76px] w-[125px] items-center justify-center bg-neutral-0">
+            <div className="float-shadow absolute top-36 z-10 flex h-[70px] w-[103px] items-center justify-center bg-neutral-0">
               <div className="text-center">
-                <div className="text-4.5xl font-bold text-neutral-900">
-                  300,000
-                </div>
                 <div className="font-switz text-[9px] font-bold text-neutral-500">
-                  Customers
+                  Safety Compliant
+                </div>
+                <div className="leading text-4.5xl font-bold text-neutral-900">
+                  99.9%
+                </div>
+              </div>
+            </div>
+            <div className="float-shadow absolute right-0 top-5 z-10 flex h-[70px] w-[109px] items-center justify-center bg-neutral-0">
+              <div className="text-center">
+                <div className="font-switz text-[9px] font-bold text-neutral-500">
+                  Monthly Gas Supplied
+                </div>
+                <div className="text-center">
+                  <div className="text-4.5xl font-bold text-neutral-900">
+                    800MT
+                  </div>
                 </div>
               </div>
             </div>
@@ -34,7 +46,7 @@ const AboutHeader = () => {
               <div className="md:max-w-[578px]">
                 <div className="relative z-20 text-center md:max-w-[578px] md:text-left">
                   <div className="text-3.3xl font-bold leading-[37px] text-neutral-900 md:text-5.5xl md:leading-[68px]">
-                    Bridging the gas infrastructure gap in Sub Saharan Africa
+                    We are passionate about building gas facilities
                   </div>
                   <div className="mt-6 font-switz text-base text-neutral-500 md:text-4.5xl">
                     At Gasavant, we manage and enforce the highest quality and
@@ -86,6 +98,16 @@ const AboutHeader = () => {
                 </div>
                 <div className="text-4.1xl font-bold text-neutral-900">
                   100+
+                </div>
+              </div>
+            </div>
+            <div className="float-shadow absolute bottom-[301px] right-0 z-10 flex h-[130px] w-[222px] items-center justify-center bg-neutral-0">
+              <div className="text-center">
+                <div className="font-switz text-neutral-500">
+                  Monthly Gas Supplied
+                </div>
+                <div className="text-4.1xl font-bold text-neutral-900">
+                  800MT
                 </div>
               </div>
             </div>

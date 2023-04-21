@@ -104,9 +104,11 @@ const Navbar: React.FC<NavbarProps> = ({
                   )}
                 </div>
               ))}
-              <div className="absolute bottom-0 w-full">
-                <Button label="Contact us" className="w-full" />
-              </div>
+              <Link href="/contact">
+                <div className="absolute bottom-0 w-full">
+                  <Button label="Contact us" className="w-full" />
+                </div>
+              </Link>
             </div>
           </div>
           <div className="hidden items-center md:flex">
@@ -122,9 +124,11 @@ const Navbar: React.FC<NavbarProps> = ({
               </Fragment>
             ))}
           </div>
-          <div className="hidden md:block">
-            <Button variant="primary" label="Contact us" />
-          </div>
+          <Link href="/contact">
+            <div className="hidden md:block">
+              <Button variant="primary" label="Contact us" />
+            </div>
+          </Link>
           <div className="block md:hidden">
             <button type="button" onClick={() => setOpenNav(!openNav)}>
               {!openNav ? (

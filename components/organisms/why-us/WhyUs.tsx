@@ -4,46 +4,10 @@ import { Button } from "components/atoms";
 
 export const partnersData = [
   {
-    imageUrl: "/assets/images/logos/flowgas.png",
-    width: 138,
-    height: 50,
-    alt: "Flowgas logo",
-  },
-  {
-    imageUrl: "/assets/images/logos/techoil.png",
-    width: 161,
-    height: 41,
-    alt: "Techoil logo",
-  },
-  {
-    imageUrl: "/assets/images/logos/northwest.png",
-    width: 191,
-    height: 51,
-    alt: "Northwest logo",
-  },
-  {
-    imageUrl: "/assets/images/logos/oryx.png",
-    width: 121,
-    height: 47,
-    alt: "Northwest logo",
-  },
-  {
-    imageUrl: "/assets/images/logos/stockgap.png",
-    width: 143,
-    height: 55,
-    alt: "Stockgap logo",
-  },
-  {
     imageUrl: "/assets/images/logos/aab.png",
     width: 140,
     height: 46,
     alt: "AAb logo",
-  },
-  {
-    imageUrl: "/assets/images/logos/aarano.png",
-    width: 138,
-    height: 51,
-    alt: "AA Rano logo",
   },
   {
     imageUrl: "/assets/images/logos/peso.png",
@@ -52,10 +16,46 @@ export const partnersData = [
     alt: "Peso logo",
   },
   {
+    imageUrl: "/assets/images/logos/cimc.png",
+    width: 114,
+    height: 35,
+    alt: "CIMC ENRIC logo",
+  },
+  {
+    imageUrl: "/assets/images/logos/eroton.png",
+    width: 113,
+    height: 44,
+    alt: "Eroton logo",
+  },
+  {
+    imageUrl: "/assets/images/logos/gi.png",
+    width: 114,
+    height: 54,
+    alt: "GI&E logo",
+  },
+  {
+    imageUrl: "/assets/images/logos/powergas.png",
+    width: 160,
+    height: 51,
+    alt: "Powergas logo",
+  },
+  {
     imageUrl: "/assets/images/logos/hydrocarbon.png",
     width: 178,
     height: 46,
     alt: "Kwake Hydrocarbon logo",
+  },
+  {
+    imageUrl: "/assets/images/logos/oilserve.png",
+    width: 80,
+    height: 50,
+    alt: "Oilserve logo",
+  },
+  {
+    imageUrl: "/assets/images/logos/nga.png",
+    width: 61,
+    height: 61,
+    alt: "NGA logo",
   },
 ];
 
@@ -64,9 +64,9 @@ const WhyUs: React.FC = () => {
     <section className="py-14 md:pb-[213px] md:pt-[193px]">
       <div className="container mx-auto bg-white px-5 md:px-20 2xl:px-40">
         <div className="grid md:grid-cols-2">
-          <div className="flex flex-wrap items-center justify-center md:hidden">
+          <div className="flex flex-wrap items-center justify-center gap-x-14 md:hidden">
             {partnersData.map(({ imageUrl, width, height, alt }) => (
-              <div key={imageUrl} className="mb-[60px] w-1/2 md:w-1/3">
+              <div key={imageUrl} className="mb-[60px]">
                 <Image
                   src={imageUrl}
                   width={width}
@@ -103,7 +103,10 @@ const WhyUs: React.FC = () => {
           <div className="mt-10 hidden md:block">
             <div className="flex flex-wrap items-center justify-between md:w-[595.13px]">
               {partnersData.map(({ imageUrl, width, height, alt }) => (
-                <div key={imageUrl} className="mb-[60px] w-1/2 md:w-1/5">
+                <div
+                  key={imageUrl}
+                  className="mb-[60px] flex w-1/3 justify-center"
+                >
                   <Image
                     src={imageUrl}
                     width={width}

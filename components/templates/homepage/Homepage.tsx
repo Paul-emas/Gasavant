@@ -19,19 +19,19 @@ const pageData = {
     {
       title: "Our Vision",
       caption:
-        "To be at the forefront of Gas infrastructure and development  in Africa’s energy industry.",
+        "To be at the forefront of Gas infrastructure and development  in Africa’s energy industry",
       iconUrl: "/assets/images/section-icons/flag.jpg",
     },
     {
       title: "Our Values",
       caption:
-        "We prioritize client satisfaction, environmental stewardship, and societal advancement.",
+        "We prioritize client satisfaction, environmental stewardship, and societal advancement",
       iconUrl: "/assets/images/section-icons/diamond.jpg",
     },
     {
       title: "Our Vision",
       caption:
-        "To close the Gas Infrastructure gap and accelerate economic development in Nigeria and Africa at large.",
+        "To close the Gas Infrastructure gap and accelerate economic development in Nigeria and Africa at large",
       iconUrl: "/assets/images/section-icons/vision.jpg",
     },
   ],
@@ -42,19 +42,19 @@ export const pageData2 = {
     {
       title: "Engineering Design",
       caption:
-        "We adhere to relevant design codes including API2510, ASME Process piping B31.3,ASME VIII Div 1&2 for pressure vessel design, BS8110,BS5950 for civil structures.",
+        "We adhere to relevant design codes including API2510, ASME Process piping B31.3,ASME VIII Div 1&2 for pressure vessel design, BS8110,BS5950 for civil structures",
       iconUrl: "/assets/images/section-icons/design.jpg",
     },
     {
       title: "Construction",
       caption:
-        "We provide construction services for gas infrastructure and storage tanks. We are reliable and experienced to provide high-quality construction services for gas infrastructure.",
+        "We provide construction services for gas infrastructure and storage tanks. We are reliable and experienced to provide high-quality construction services for gas infrastructure",
       iconUrl: "/assets/images/section-icons/construction.jpg",
     },
     {
       title: "Maintenance",
       caption:
-        "We provide maintenance services, including tank cleaning, inspection, repair, and painting. We ensure that tanks are properly maintained and meet all regulatory and safety requirements.",
+        "We provide maintenance services, including tank cleaning, inspection, repair, and painting. We ensure that tanks are properly maintained and meet all regulatory and safety requirements",
       iconUrl: "/assets/images/section-icons/maintainance.jpg",
     },
     {
@@ -66,13 +66,13 @@ export const pageData2 = {
     {
       title: "Storage tanks",
       caption:
-        "We offer a comprehensive range of storage solutions, including underground and aboveground storage tanks, as well as specialized storage for liquefied gases.",
+        "We offer a comprehensive range of storage solutions, including underground and aboveground storage tanks, as well as specialized storage for liquefied gases",
       iconUrl: "/assets/images/section-icons/storage.jpg",
     },
     {
       title: "LGP",
       caption:
-        "Facilities Front End Engineering Design (FEED) LPG Financial Models LPG Business Plans and consultancy.",
+        "Facilities Front End Engineering Design (FEED) LPG Financial Models LPG Business Plans and consultancy",
       iconUrl: "/assets/images/section-icons/lgp.jpg",
     },
   ],

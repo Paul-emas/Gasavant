@@ -1,20 +1,29 @@
-import { SectionHeading } from "components/atoms";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+
+const imagesSecOne = [
+  "/assets/images/slider/img-0.jpg",
+  "/assets/images/slider/img-1.jpg",
+  "/assets/images/slider/img-2.jpg",
+  "/assets/images/slider/img-3.jpg",
+];
+
+const imagesSecTwo = [
+  "/assets/images/slider/img-4.jpg",
+  "/assets/images/slider/img-5.jpg",
+  "/assets/images/slider/img-6.jpg",
+  "/assets/images/slider/img-7.jpg",
+];
 
 const ProjectsSlider = () => {
   return (
     <section className="overflow-hidden md:pt-[74px] md:pb-10">
       <div className="w-[4079px] overflow-auto whitespace-nowrap">
         <div className="flex gap-x-1 md:gap-x-3.5">
-          {[...Array(20)].map((value) => (
+          {[...imagesSecOne, ...imagesSecTwo].map((value) => (
             <div key={value}>
               <div className="relative h-[131.48px] w-[173.13px] md:h-[309.4px] md:w-[407.4px]">
-                <Image
-                  src="/assets/images/slider/slide-4.jpg"
-                  alt="project slider image"
-                  fill
-                />
+                <Image src={value} alt="project slider image" fill />
               </div>
             </div>
           ))}
@@ -22,14 +31,10 @@ const ProjectsSlider = () => {
       </div>
       <div className="w-[4079px] overflow-auto whitespace-nowrap">
         <div className="mt-3.5 flex gap-x-1 md:gap-x-3.5">
-          {[...Array(20)].map((value) => (
+          {[...imagesSecTwo, ...imagesSecOne].map((value) => (
             <div key={value}>
               <div className="relative h-[131.48px] w-[173.13px] md:h-[309.4px] md:w-[407.4px]">
-                <Image
-                  src="/assets/images/slider/slide-2.jpg"
-                  alt="project slider image"
-                  fill
-                />
+                <Image src={value} alt="project slider image" fill />
               </div>
             </div>
           ))}
