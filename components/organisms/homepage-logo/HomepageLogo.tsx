@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { partnersData } from "../why-us/WhyUs";
 
 const HomepageLogo: React.FC = () => {
@@ -11,38 +12,40 @@ const HomepageLogo: React.FC = () => {
         </div>
         <div className="mt-10">
           <div className="hidden items-center justify-between md:flex">
-            {partnersData
-              .slice(0, 5)
-              .map(({ imageUrl, width, height, alt }) => (
-                <div key={imageUrl} className="mb-[60px] w-1/3">
-                  <Image
-                    src={imageUrl}
-                    width={width}
-                    height={height}
-                    alt={alt}
-                    placeholder="blur"
-                    blurDataURL={imageUrl}
-                    loading="lazy"
-                  />
-                </div>
+            <Swiper spaceBetween={5} slidesPerView={5} autoplay>
+              {partnersData.map(({ imageUrl, width, height, alt }) => (
+                <SwiperSlide key={imageUrl}>
+                  <div className="mb-[60px]">
+                    <Image
+                      src={imageUrl}
+                      width={width}
+                      height={height}
+                      alt={alt}
+                      placeholder="blur"
+                      blurDataURL={imageUrl}
+                      loading="lazy"
+                    />
+                  </div>
+                </SwiperSlide>
               ))}
+            </Swiper>
           </div>
-          <div className="flex items-center justify-between gap-x-3 md:hidden">
-            {partnersData
-              .slice(0, 3)
-              .map(({ imageUrl, width, height, alt }) => (
-                <div key={imageUrl} className="mb-[60px] w-1/3">
-                  <Image
-                    src={imageUrl}
-                    width={width}
-                    height={height}
-                    alt={alt}
-                    placeholder="blur"
-                    blurDataURL={imageUrl}
-                    loading="lazy"
-                  />
-                </div>
+          <div className="flex items-center justify-between gap-x-8 md:hidden">
+            <Swiper spaceBetween={5} slidesPerView={3} autoplay>
+              {partnersData.map(({ imageUrl, width, height, alt }) => (
+                <SwiperSlide key={imageUrl}>
+                  <div className="mb-[60px] mr-4">
+                    <Image
+                      src={imageUrl}
+                      width={width}
+                      height={height}
+                      alt={alt}
+                      loading="lazy"
+                    />
+                  </div>
+                </SwiperSlide>
               ))}
+            </Swiper>
           </div>
         </div>
       </div>

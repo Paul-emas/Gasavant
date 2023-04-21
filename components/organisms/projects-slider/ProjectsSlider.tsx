@@ -18,7 +18,7 @@ const imagesSecTwo = [
 const ProjectsSlider = () => {
   return (
     <section className="overflow-hidden md:pt-[74px] md:pb-10">
-      <div className="w-[4079px] overflow-auto whitespace-nowrap">
+      <div className="w-[4079px] overflow-hidden whitespace-nowrap">
         <div className="flex gap-x-1 md:gap-x-3.5">
           {[...imagesSecOne, ...imagesSecTwo].map((value) => (
             <div key={value}>
@@ -29,7 +29,7 @@ const ProjectsSlider = () => {
           ))}
         </div>
       </div>
-      <div className="w-[4079px] overflow-auto whitespace-nowrap">
+      <div className="w-[4079px] overflow-hidden whitespace-nowrap">
         <div className="mt-3.5 flex gap-x-1 md:gap-x-3.5">
           {[...imagesSecTwo, ...imagesSecOne].map((value) => (
             <div key={value}>

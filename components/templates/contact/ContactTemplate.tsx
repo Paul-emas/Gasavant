@@ -8,6 +8,7 @@ const ContactTemplate: React.FC = () => {
   const [isFunded, setIsFunded] = useState(false);
   const { register, getValues } = useForm();
   const [companyName, setCompanyName] = useState("");
+  const [desc, setDesc] = useState("");
 
   const [isLoadingForm, setIsLoadingForm] = useState(false);
 
@@ -67,6 +68,7 @@ const ContactTemplate: React.FC = () => {
                     name="access_key"
                     value={process.env.NEXT_PUBLIC_WEB3FORM_KEY}
                   />
+                  <input type="hidden" name="subject" value={desc} />
                   <input type="checkbox" name="botcheck" className="hidden" />
                   <input
                     type="hidden"
@@ -85,9 +87,9 @@ const ContactTemplate: React.FC = () => {
                         })}
                       />
                       <input
-                        {...register("Company email")}
+                        {...register("Email address")}
                         type="text"
-                        placeholder="Company email"
+                        placeholder="Email address"
                         className="input-form mt-2.5"
                         required
                       />
@@ -124,8 +126,17 @@ const ContactTemplate: React.FC = () => {
                           </div>
                         </div>
                       </div>
+                      <input
+                        {...register("Description", {
+                          onChange: (e) => setDesc(e.target.value),
+                        })}
+                        type="text"
+                        placeholder="Description"
+                        className="input-form mt-2.5"
+                        required
+                      />
 
-                      <div className="my-[69px] flex items-center justify-between">
+                      <div className="my-[40px] flex items-center justify-between">
                         <div className="text-left font-switz text-base font-semibold text-neutral-900">
                           Does this project have financing?
                         </div>
@@ -175,7 +186,9 @@ const ContactTemplate: React.FC = () => {
                         required
                       />
                       <textarea
-                        {...register("Message")}
+                        {...register("Message", {
+                          onChange: (e) => setDesc(e.target.value),
+                        })}
                         placeholder="Message"
                         className="input-form mt-2.5 h-[132px!important]"
                         required
