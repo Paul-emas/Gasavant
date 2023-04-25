@@ -40,7 +40,7 @@ const ServicesTemplate: React.FC = () => {
               <SectionHeading
                 {...{
                   title:
-                    "We are a tested, trusted and reliable company to build gas storage tanks",
+                    "We are tested, trusted and reliable in building gas storage tanks",
                   pageCaption:
                     "With deep market understanding, our team of experienced professionals are dedicated to providing the highest level of service and safety for our clients.",
                   maxWidth: "max-w-[820.07px]",
