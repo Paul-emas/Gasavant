@@ -29,7 +29,7 @@ const pageData = {
       iconUrl: "/assets/images/section-icons/diamond.jpg",
     },
     {
-      title: "Our Vision",
+      title: "Our Mission",
       caption:
         "To close the Gas Infrastructure gap and accelerate economic development in Nigeria and Africa at large",
       iconUrl: "/assets/images/section-icons/vision.jpg",
@@ -48,7 +48,7 @@ export const pageData2 = {
     {
       title: "Construction",
       caption:
-        "We provide construction services for gas infrastructure and storage tanks. We are reliable and experienced to provide high-quality construction services for gas infrastructure",
+        "We provide construction services for gas infrastructure and storage tanks. We are reliable and experienced in provision of high-quality construction services for gas infrastructure.",
       iconUrl: "/assets/images/section-icons/construction.jpg",
     },
     {
@@ -70,9 +70,9 @@ export const pageData2 = {
       iconUrl: "/assets/images/section-icons/storage.jpg",
     },
     {
-      title: "LGP",
+      title: "LPG",
       caption:
-        "Facilities Front End Engineering Design (FEED) LPG Financial Models LPG Business Plans and consultancy",
+        "Facilities Front End Engineering Design (FEED) LPG Financial Models LPG Business Plans and consultancy.",
       iconUrl: "/assets/images/section-icons/lgp.jpg",
     },
   ],

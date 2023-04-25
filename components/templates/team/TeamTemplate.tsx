@@ -9,7 +9,7 @@ const companyData = [
   {
     name: "Chukwuemeka Iheme",
     label: "CEO, Gasavant Africa",
-    desc: "Chukwuemeka Iheme, CEO, Gasavant Africa, is a commercial engineer with over 10 years of international  oil and gas, project management, management consulting, turbine engineering and supply chain experience. He He has a proven track record of delivering exceptional value across the energy sector including LPG & propane trading, gas infrastructure construction, upstream gas commercialization, and downstream gas distribution.",
+    desc: "Chukwuemeka Iheme, is a Chemical Engineer with over 12 years of experience across the energy value chain - upstream and midstream oil and gas, project management, consulting, natural gas technology and has been an Executive Council Member of the Nigerian Gas Association from 2020-Present. He has a proven track record of delivering exceptional value across upstream gas sales agreements, OML & Marginal Field acquisition and bidding, Gas Commercialization projects, downstream gas offtake - Lean Gas & NGLs. Projects: OML 29 GSAs (3), NGFCP, Ghana Offshore Bid Rnd, Chevron OML 86&88, 2020 Marginal Field Rnd, LPG inland terminals, Gas to Power, Gas Logistics Infrastructure etc. ",
     url: "/assets/images/profiles/profile-1.jpg",
   },
   {
