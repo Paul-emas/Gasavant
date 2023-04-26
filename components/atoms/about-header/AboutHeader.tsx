@@ -14,7 +14,7 @@ const AboutHeader = () => {
             <div className="float-shadow absolute top-36 z-10 flex h-[70px] w-[103px] items-center justify-center bg-neutral-0">
               <div className="text-center">
                 <div className="font-switz text-[9px] font-bold text-neutral-500">
-                  Safety Compliant
+                  Safety Compliance
                 </div>
                 <div className="leading text-4.5xl font-bold text-neutral-900">
                   99.9%

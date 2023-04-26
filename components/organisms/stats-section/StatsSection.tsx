@@ -16,7 +16,7 @@ export const stats = [
   },
   {
     title: "99.9%",
-    caption: "Safety Compliant",
+    caption: "Safety Compliance",
   },
 ];
 
