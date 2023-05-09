@@ -61,12 +61,14 @@ const footerData = [
         slug: "/faqs",
       },
       {
-        text: "connect@gasavantafrica.com",
-        slug: "#",
+        text: "connect@gasavant-africa.com",
+        slug: "mailto:connect@gasavant-africa.com",
+        type: "email",
       },
       {
         text: "+234 818 842 0514",
-        slug: "/about",
+        type: "phone",
+        slug: "tel:+2348188420514",
       },
     ],
   },
@@ -134,18 +136,30 @@ const Footer: React.FC = () => {
               <div className="mb-8 font-switz text-3.2xl font-semibold text-neutral-80 md:text-base">
                 {title}
               </div>
-              {links && links.length > 0
-                ? links.map((link) => (
-                    <div key={link.text} className="mb-4 last:mb-0 md:mb-7">
-                      <Link
-                        href={link.slug}
-                        className="font-switz text-3.2xl text-primary-50 hover:text-primary-500 md:text-base"
-                      >
-                        {link.text}
-                      </Link>
-                    </div>
-                  ))
-                : null}
+              <div className="w-[80%]">
+                {links && links.length > 0
+                  ? links.map((link) => (
+                      <div key={link.text} className="mb-4 last:mb-0 md:mb-7">
+                        {link?.type ? (
+                          <Link
+                            href={link.slug}
+                            className="font-switz text-3.2xl text-primary-50 hover:text-primary-500 md:text-base"
+                          >
+                            {link.text}
+                          </Link>
+                        ) : (
+                          <a
+                            href={link.slug}
+                            type={link.type}
+                            className="font-switz text-3.2xl text-primary-50 hover:text-primary-500 md:text-base"
+                          >
+                            <div className="whitespace-normal">{link.text}</div>
+                          </a>
+                        )}
+                      </div>
+                    ))
+                  : null}
+              </div>
               {icons && icons.length > 0
                 ? icons.map((icon) => (
                     <div key={icon.text} className="mb-7 last:mb-0">

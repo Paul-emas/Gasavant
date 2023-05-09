@@ -20,9 +20,9 @@ const AboutContentCard: React.FC<AboutContentCardProps> = ({
     <div
       className={`${
         align === "right"
-          ? "flex-col-reverse md:flex-row-reverse"
-          : "flex-col-reverse"
-      } mb-12 flex flex-wrap items-center justify-center gap-x-[118px] last:mb-0 md:mb-[220px] md:flex-row`}
+          ? "flex-col-reverse sm:flex-row-reverse"
+          : "flex-col-reverse sm:flex-row"
+      } mb-12 flex flex-wrap items-center justify-center last:mb-0 md:mb-[220px] md:gap-x-10 2xl:gap-x-16 3xl:gap-x-[118px]`}
     >
       <div className="max-w-[456px] text-center md:text-left">
         <div className="text-neurtal-900 mt-12 text-2xl font-bold leading-[30px] md:mt-0 md:text-[33px] md:leading-10">

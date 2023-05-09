@@ -9,12 +9,12 @@ const QualitySection: React.FC = () => {
       <div className="container mx-auto bg-white px-5 md:px-20 2xl:px-40">
         <div className="flex justify-center">
           <div className="flex flex-col items-center md:flex-row md:space-x-[88px]">
-            <div className="relative h-[359.84px] w-[353.44px] -rotate-90 md:h-[649.25px] md:w-[622px]">
+            <div className="relative h-[359.84px] w-[353.44px] md:h-[649.25px] md:w-[605px]">
               <Image
                 src="/assets/images/quality-banner.jpg"
                 fill
                 alt="Quality banner image"
-                className="object-cover"
+                className="scale-110 object-cover"
               />
             </div>
             <div className="mt-[47px] text-center md:mt-0 md:max-w-[451px] md:text-left">
