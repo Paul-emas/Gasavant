@@ -23,7 +23,14 @@ const ProjectsSlider = () => {
           {[...imagesSecOne, ...imagesSecTwo].map((value) => (
             <div key={value}>
               <div className="relative h-[131.48px] w-[173.13px] md:h-[309.4px] md:w-[407.4px]">
-                <Image src={value} alt="project slider image" fill />
+                <Image
+                  src={value}
+                  placeholder="blur"
+                  blurDataURL={value}
+                  alt="project slider image"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           ))}
@@ -34,7 +41,14 @@ const ProjectsSlider = () => {
           {[...imagesSecTwo, ...imagesSecOne].map((value) => (
             <div key={value}>
               <div className="relative h-[131.48px] w-[173.13px] md:h-[309.4px] md:w-[407.4px]">
-                <Image src={value} alt="project slider image" fill />
+                <Image
+                  src={value}
+                  placeholder="blur"
+                  blurDataURL={value}
+                  alt="project slider image"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           ))}
