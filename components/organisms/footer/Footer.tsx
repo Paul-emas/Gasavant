@@ -183,7 +183,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mt-[71px] h-1 border-b border-neutral-400 md:mt-[185px]"></div>
         <div className="mt-7 justify-between text-center font-switz text-3.2xl text-neutral-0 md:mt-12 md:flex md:text-left md:text-base">
-          <div>8, Water Corporation, Dr. Oniru, Lagos, Nigeria.</div>
+          <div>1B, Etim Inyang Crescent, Victoria Island, Lagos, Nigeria.</div>
           <div className="mt-8 md:mt-0">
             © Gasavant Africa 2023. All rights reserved.
           </div>
