@@ -11,13 +11,17 @@ const AboutHeader = () => {
         <div className="relative h-full md:grid md:grid-cols-2">
           <div className="relative top-2 block md:hidden">
             <div className="shade absolute top-36 left-0 z-10 h-[239px] w-full"></div>
-            <div className="float-shadow absolute top-36 z-10 flex h-[70px] w-[103px] items-center justify-center bg-neutral-0">
+            <div className="float-shadow absolute top-36 z-10 flex h-[80px] w-[112px] items-center justify-center bg-neutral-0">
               <div className="text-center">
-                <div className="font-switz text-[9px] font-bold text-neutral-500">
-                  Safety Compliance
-                </div>
-                <div className="leading text-4.5xl font-bold text-neutral-900">
-                  99.9%
+                <Image
+                  src="/assets/images/check.jpg"
+                  width={24}
+                  height={24}
+                  alt="checklist icon image"
+                  className="mx-auto"
+                />
+                <div className="mx-auto mt-3 max-w-[100px] text-center font-switz text-[7px] text-neutral-500 md:mt-3 md:max-w-[180px] md:text-3.2xl">
+                  Safety & Regulatory Compliance
                 </div>
               </div>
             </div>
@@ -91,13 +95,19 @@ const AboutHeader = () => {
             </div>
           </div>
           <div className="relative -top-9 hidden md:block">
-            <div className="float-shadow absolute bottom-[107px] -left-20 z-10 flex h-[130px] w-[222px] items-center justify-center bg-neutral-0">
+            <div className="float-shadow absolute bottom-[107px] -left-20 z-10 flex h-[140px] w-[222px] items-center justify-center bg-neutral-0">
               <div className="text-center">
-                <div className="font-switz text-neutral-500">
-                  Completed projects
-                </div>
-                <div className="text-4.1xl font-bold text-neutral-900">
-                  100+
+                <div className="text-center">
+                  <Image
+                    src="/assets/images/check.jpg"
+                    width={40}
+                    height={40}
+                    alt="checklist icon image"
+                    className="mx-auto hidden md:block"
+                  />
+                  <div className="mx-auto mt-3 max-w-[130px] text-center font-switz text-[11px] text-neutral-500 md:mt-3 md:max-w-[180px] md:text-3.2xl">
+                    Safety & Regulatory Compliance
+                  </div>
                 </div>
               </div>
             </div>

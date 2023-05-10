@@ -38,7 +38,7 @@ const AboutCounter: React.FC = () => {
                         alt="checklist icon image"
                         className="mx-auto block md:hidden"
                       />
-                      <div className="mx-auto mt-3 max-w-[130px] text-center text-[11px] text-neutral-500 md:mt-5 md:max-w-[180px] md:text-base">
+                      <div className="mx-auto mt-3 max-w-[130px] text-center font-switz text-[11px] text-neutral-500 md:mt-5 md:max-w-[180px] md:text-base">
                         {caption}
                       </div>
                     </div>
