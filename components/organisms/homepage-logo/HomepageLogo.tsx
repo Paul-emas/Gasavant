@@ -8,7 +8,7 @@ const HomepageLogo: React.FC = () => {
     <section className="h-[167px] bg-primary-50 py-8 md:h-[279px] md:py-16">
       <div className="container mx-auto px-8 2xl:px-40">
         <div className="text-center font-switz text-3.2xl font-semibold text-neutral-900 md:text-4.5xl">
-          Trusted by 10+ Industry leading companies
+          Trusted by Industry leading companies
         </div>
         <div className="mt-10">
           <div className="hidden items-center justify-between md:flex">

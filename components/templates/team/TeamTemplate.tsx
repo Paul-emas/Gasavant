@@ -81,7 +81,7 @@ const TeamTemplate: React.FC = () => {
           <div>
             <SectionHeading
               {...{
-                title: "Trusted by 10+ industry leading companies",
+                title: "Trusted by  industry leading companies",
                 pageCaption:
                   "Our clients include major oil & gas companies, as well as smaller regional gas providers, we have a proven track record of delivering projects on time and within budget.",
               }}
