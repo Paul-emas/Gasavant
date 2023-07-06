@@ -1,11 +1,11 @@
 import { HomepageTemplate } from "components/templates";
-import { DefaultSeo, NextSeo } from "next-seo";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
+import { DefaultSEOProps } from "utils/data";
 
 export default function Home() {
   return (
     <div>
-      <NextSeo {...DefaultSeo} />
+      <NextSeo {...DefaultSEOProps} />
       <HomepageTemplate />
     </div>
   );
