@@ -5,7 +5,11 @@ import { DefaultSEOProps } from "utils/data";
 export default function Home() {
   return (
     <div>
-      <NextSeo {...DefaultSEOProps} />
+      <NextSeo
+        title="Gasavantafrica - We build high-quality gas storage facilities"
+        description="Providing engineering and gas storage infrastructure that meets all your gas infrastructure needs."
+        {...DefaultSEOProps}
+      />
       <HomepageTemplate />
     </div>
   );
